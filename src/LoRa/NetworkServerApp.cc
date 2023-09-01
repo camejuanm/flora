@@ -323,7 +323,7 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
             knownNodes[i].historyAllSNIR->record(SNIRinGW);
             knownNodes[i].historyAllRSSI->record(RSSIinGW);
 //            knownNodes[i].receivedSeqNumber->record(frame->getSequenceNumber());
-            knownNodes[i].receivedSeqNumber.push_back(pkt->getSequenceNumber());
+            knownNodes[i].receivedSeqNumber.push_back(frame->getSequenceNumber());
             if(knownNodes[i].adrListSNIR.size() == 20) knownNodes[i].adrListSNIR.pop_front();
             knownNodes[i].framesFromLastADRCommand++;
             if(knownNodes[i].receivedSeqNumber.size() == 20) knownNodes[i].receivedSeqNumber.pop_front();
@@ -354,34 +354,34 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                    SNRm = *min_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                }
                 if(adrMethod == "owa")
-               {
-                   double begin=knownNodes[i].receivedSeqNumber.front();
-    s               double end=knownNodes[i].receivedSeqNumber.back();
-                   double size=knownNodes[i].receivedSeqNumber.size();
-                   double pathloss=(end-begin-18)/(end-begin);
-                   double pathlossRate = (int)(pathloss * 100000 + .5);
-                   pathlossRate=pathlossRate / 100000;
-                   knownNodes[i].adrListSNIR.sort();
-                   double totalSNR = 0;
-                   double result=0;
-                   int last = 19;
-                   for (std::list<double>::iterator j=knownNodes[i].adrListSNIR.begin(); j != knownNodes[i].adrListSNIR.end(); ++j)
-                   {
-                       //pessimistic owa ADR
-                       if(last==1){
-                           result=pow(pathlossRate,(19-last));
-                       }else{
-                           result=(1-pathlossRate)*pow(pathlossRate,(19-last));
-                       }
-                       result = (int)(result * 100000 + .5);
-                       result=result / 100000;
+                {
+                    double begin=knownNodes[i].receivedSeqNumber.front();
+                    double end=knownNodes[i].receivedSeqNumber.back();
+                    double size=knownNodes[i].receivedSeqNumber.size();
+                    double pathloss=(end-begin-18)/(end-begin);
+                    double pathlossRate = (int)(pathloss * 100000 + .5);
+                    pathlossRate=pathlossRate / 100000;
+                    knownNodes[i].adrListSNIR.sort();
+                    double totalSNR = 0;
+                    double result=0;
+                    int last = 19;
+                    for (std::list<double>::iterator j=knownNodes[i].adrListSNIR.begin(); j != knownNodes[i].adrListSNIR.end(); ++j)
+                    {
+                        //pessimistic owa ADR
+                        if(last==1){
+                            result=pow(pathlossRate,(19-last));
+                        }else{
+                            result=(1-pathlossRate)*pow(pathlossRate,(19-last));
+                        }
+                        result = (int)(result * 100000 + .5);
+                        result=result / 100000;
 
-                       totalSNR=(*j * result)+totalSNR;
+                        totalSNR=(*j * result)+totalSNR;
 
-                       last=last-1;
-                   }
-                   SNRm = totalSNR;
-               }
+                        last=last-1;
+                    }
+                    SNRm = totalSNR;
+                }
 
 
             }
