@@ -31,6 +31,7 @@ void LoRaLogNormalShadowing::initialize(int stage)
         sigma = par("sigma");
         gamma = par("gamma");
         d0 = m(par("d0"));
+        PL_d0_db = par("PL_d0_db");
     }
 }
 
@@ -39,6 +40,7 @@ std::ostream& LoRaLogNormalShadowing::printToStream(std::ostream& stream, int le
     stream << "LoRaLogNormalShadowing";
     if (level <= PRINT_LEVEL_TRACE)
         stream << ", alpha = " << alpha
+               << ", PL_d0_db = " << PL_d0_db
                << ", systemLoss = " << systemLoss
                << ", sigma = " << sigma;
     return stream;
@@ -47,7 +49,7 @@ std::ostream& LoRaLogNormalShadowing::printToStream(std::ostream& stream, int le
 double LoRaLogNormalShadowing::computePathLoss(mps propagationSpeed, Hz frequency, m distance) const
 {
     // parameters taken from paper "Do LoRa Low-Power Wide-Area Networks Scale?"
-    double PL_d0_db = 127.41;
+//    double PL_d0_db = 127.41;
     double PL_db = PL_d0_db + 10 * gamma * log10(unit(distance / d0).get()) + normal(0.0, sigma);
     return math::dB2fraction(-PL_db);
 }
