@@ -1222,783 +1222,784 @@ EXPORTS
     _ZNSt6vectorIN4inet9L3AddressESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_ @1221
     _ZNSt6vectorIN5flora14receivedPacketESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_ @1222
     _ZNSt6vectorIN5flora14receivedPacketESaIS1_EED2Ev @1223
-    _ZNSt6vectorIN5flora9knownNodeESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_ @1224
-    _ZNSt6vectorIN5flora9knownNodeESaIS1_EED2Ev @1225
-    _ZNSt6vectorIPN5flora17LoRaNeighborCache10RadioEntryESaIS3_EED2Ev @1226
-    _ZNSt6vectorISt5tupleIJN4inet9L3AddressEddEESaIS3_EE17_M_realloc_insertIJRKS2_ddEEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_ @1227
-    _ZNSt7__cxx114listIPN7omnetpp8cMessageESaIS3_EE6removeERKS3_ @1228
-    _ZNSt7__cxx114listIdSaIdEE4sortEv @1229
-    _ZNSt8_Rb_treeIPKN4inet13physicallayer6IRadioESt4pairIKS4_PN5flora17LoRaNeighborCache10RadioEntryEESt10_Select1stISB_ESt4lessIS4_ESaISB_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS6_EESM_IJEEEEESt17_Rb_tree_iteratorISB_ESt23_Rb_tree_const_iteratorISB_EDpOT_ @1230
-    _ZNSt8_Rb_treeIPKN4inet13physicallayer6IRadioESt4pairIKS4_PN5flora17LoRaNeighborCache10RadioEntryEESt10_Select1stISB_ESt4lessIS4_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS6_ @1231
-    _ZNSt8_Rb_treeIPKN4inet13physicallayer6IRadioESt4pairIKS4_PN5flora17LoRaNeighborCache10RadioEntryEESt10_Select1stISB_ESt4lessIS4_ESaISB_EE8_M_eraseEPSt13_Rb_tree_nodeISB_E @1232
-    _ZNSt8_Rb_treeIdSt4pairIKddESt10_Select1stIS2_ESt4lessIdESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOdEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_ @1233
-    _ZNSt8_Rb_treeIdSt4pairIKddESt10_Select1stIS2_ESt4lessIdESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_ @1234
-    _ZNSt8_Rb_treeIdSt4pairIKddESt10_Select1stIS2_ESt4lessIdESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E @1235
-    _ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOiEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_ @1236
-    _ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_ @1237
-    _ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E @1238
-    _ZSt8_DestroyIPN5flora9knownNodeES1_EvT_S3_RSaIT0_E @1239
-    _ZTCN5flora11LoRaGWRadioE0_N4inet13physicallayer13FlatRadioBaseE @1240 DATA
-    _ZTCN5flora11LoRaGWRadioE0_N4inet13physicallayer19NarrowbandRadioBaseE @1241 DATA
-    _ZTCN5flora11LoRaGWRadioE0_N4inet13physicallayer5RadioE @1242 DATA
-    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer12ReceiverBaseE @1243 DATA
-    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer16FlatReceiverBaseE @1244 DATA
-    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer16SnirReceiverBaseE @1245 DATA
-    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer22NarrowbandReceiverBaseE @1246 DATA
-    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer13ReceptionBaseE @1247 DATA
-    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer15ScalarReceptionE @1248 DATA
-    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer17FlatReceptionBaseE @1249 DATA
-    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer23NarrowbandReceptionBaseE @1250 DATA
-    _ZTCN5flora13LoRaReceptionE248_N4inet13physicallayer21IReceptionAnalogModelE @1251 DATA
-    _ZTCN5flora15LoRaAnalogModelE0_N4inet13physicallayer15AnalogModelBaseE @1252 DATA
-    _ZTCN5flora15LoRaAnalogModelE0_N4inet13physicallayer21ScalarAnalogModelBaseE @1253 DATA
-    _ZTCN5flora15LoRaTransmitterE0_N4inet13physicallayer15TransmitterBaseE @1254 DATA
-    _ZTCN5flora15LoRaTransmitterE0_N4inet13physicallayer19FlatTransmitterBaseE @1255 DATA
-    _ZTCN5flora15LoRaTransmitterE0_N4inet13physicallayer25NarrowbandTransmitterBaseE @1256 DATA
-    _ZTCN5flora16LoRaTransmissionE0_N4inet13physicallayer16TransmissionBaseE @1257 DATA
-    _ZTCN5flora16LoRaTransmissionE248_N4inet13physicallayer24ITransmissionAnalogModelE @1258 DATA
-    _ZTCN5flora18LoRaEnergyConsumerE0_N4inet13physicallayer26StateBasedEpEnergyConsumerE @1259 DATA
-    _ZTCN5flora18LoRaEnergyConsumerE216_N4inet5power17IEpEnergyConsumerE @1260 DATA
-    _ZTCN5flora9LoRaRadioE0_N4inet13physicallayer19NarrowbandRadioBaseE @1261 DATA
-    _ZTCN5flora9LoRaRadioE0_N4inet13physicallayer5RadioE @1262 DATA
-    _ZTIN4inet10ILifecycleE @1263 DATA
-    _ZTIN4inet10MacAddressE @1264 DATA
-    _ZTIN4inet10NodeStatusE @1265 DATA
-    _ZTIN4inet11FieldsChunkE @1266 DATA
-    _ZTIN4inet12ErrorRateIndE @1267 DATA
-    _ZTIN4inet12IMacProtocolE @1268 DATA
-    _ZTIN4inet12InterfaceIndE @1269 DATA
-    _ZTIN4inet12IntervalTree8IntervalE @1270 DATA
-    _ZTIN4inet12MobilityBaseE @1271 DATA
-    _ZTIN4inet12StringFormat18IDirectiveResolverE @1272 DATA
-    _ZTIN4inet13ITaggedObjectE @1273 DATA
-    _ZTIN4inet13MacAddressIndE @1274 DATA
-    _ZTIN4inet13MacAddressReqE @1275 DATA
-    _ZTIN4inet13SignalTagBaseE @1276 DATA
-    _ZTIN4inet13SignalTimeIndE @1277 DATA
-    _ZTIN4inet13physicallayer10IListeningE @1278 DATA
-    _ZTIN4inet13physicallayer10IReceptionE @1279 DATA
-    _ZTIN4inet13physicallayer11IErrorModelE @1280 DATA
-    _ZTIN4inet13physicallayer11IModulationE @1281 DATA
-    _ZTIN4inet13physicallayer11RadioMediumE @1282 DATA
-    _ZTIN4inet13physicallayer11ScalarNoiseE @1283 DATA
-    _ZTIN4inet13physicallayer12IAnalogModelE @1284 DATA
-    _ZTIN4inet13physicallayer12IRadioMediumE @1285 DATA
-    _ZTIN4inet13physicallayer12ITransmitterE @1286 DATA
-    _ZTIN4inet13physicallayer12PathLossBaseE @1287 DATA
-    _ZTIN4inet13physicallayer12ReceiverBaseE @1288 DATA
-    _ZTIN4inet13physicallayer13BandListeningE @1289 DATA
-    _ZTIN4inet13physicallayer13FlatRadioBaseE @1290 DATA
-    _ZTIN4inet13physicallayer13IScalarSignalE @1291 DATA
-    _ZTIN4inet13physicallayer13ITransmissionE @1292 DATA
-    _ZTIN4inet13physicallayer13ListeningBaseE @1293 DATA
-    _ZTIN4inet13physicallayer13ReceptionBaseE @1294 DATA
-    _ZTIN4inet13physicallayer14INeighborCacheE @1295 DATA
-    _ZTIN4inet13physicallayer14WirelessSignalE @1296 DATA
-    _ZTIN4inet13physicallayer15AnalogModelBaseE @1297 DATA
-    _ZTIN4inet13physicallayer15IApskModulationE @1298 DATA
-    _ZTIN4inet13physicallayer15IWirelessSignalE @1299 DATA
-    _ZTIN4inet13physicallayer15ScalarReceptionE @1300 DATA
-    _ZTIN4inet13physicallayer15TransmitterBaseE @1301 DATA
-    _ZTIN4inet13physicallayer16FlatReceiverBaseE @1302 DATA
-    _ZTIN4inet13physicallayer16SnirReceiverBaseE @1303 DATA
-    _ZTIN4inet13physicallayer16TransmissionBaseE @1304 DATA
-    _ZTIN4inet13physicallayer17FlatReceptionBaseE @1305 DATA
-    _ZTIN4inet13physicallayer17FreeSpacePathLossE @1306 DATA
-    _ZTIN4inet13physicallayer17IMediumLimitCacheE @1307 DATA
-    _ZTIN4inet13physicallayer17INarrowbandSignalE @1308 DATA
-    _ZTIN4inet13physicallayer17PhysicalLayerBaseE @1309 DATA
-    _ZTIN4inet13physicallayer18ApskModulationBaseE @1310 DATA
-    _ZTIN4inet13physicallayer18ISignalAnalogModelE @1311 DATA
-    _ZTIN4inet13physicallayer19FlatTransmitterBaseE @1312 DATA
-    _ZTIN4inet13physicallayer19NarrowbandNoiseBaseE @1313 DATA
-    _ZTIN4inet13physicallayer19NarrowbandRadioBaseE @1314 DATA
-    _ZTIN4inet13physicallayer21ConfigureRadioCommandE @1315 DATA
-    _ZTIN4inet13physicallayer21IReceptionAnalogModelE @1316 DATA
-    _ZTIN4inet13physicallayer21ScalarAnalogModelBaseE @1317 DATA
-    _ZTIN4inet13physicallayer22NarrowbandReceiverBaseE @1318 DATA
-    _ZTIN4inet13physicallayer23NarrowbandReceptionBaseE @1319 DATA
-    _ZTIN4inet13physicallayer24ITransmissionAnalogModelE @1320 DATA
-    _ZTIN4inet13physicallayer25NarrowbandTransmitterBaseE @1321 DATA
-    _ZTIN4inet13physicallayer26StateBasedEpEnergyConsumerE @1322 DATA
-    _ZTIN4inet13physicallayer5RadioE @1323 DATA
-    _ZTIN4inet13physicallayer6INoiseE @1324 DATA
-    _ZTIN4inet13physicallayer6IRadioE @1325 DATA
-    _ZTIN4inet13physicallayer6SignalE @1326 DATA
-    _ZTIN4inet13physicallayer9IPathLossE @1327 DATA
-    _ZTIN4inet13physicallayer9IReceiverE @1328 DATA
-    _ZTIN4inet13physicallayer9NoiseBaseE @1329 DATA
-    _ZTIN4inet14IPhysicalLayerE @1330 DATA
-    _ZTIN4inet14SignalPowerIndE @1331 DATA
-    _ZTIN4inet14SignalPowerReqE @1332 DATA
-    _ZTIN4inet15IInterfaceTableE @1333 DATA
-    _ZTIN4inet15MacProtocolBaseE @1334 DATA
-    _ZTIN4inet15OperationalBaseE @1335 DATA
-    _ZTIN4inet15ProtocolTagBaseE @1336 DATA
-    _ZTIN4inet16IPrintableObjectE @1337 DATA
-    _ZTIN4inet16InterfaceTagBaseE @1338 DATA
-    _ZTIN4inet16NetworkInterfaceE @1339 DATA
-    _ZTIN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1340 DATA
-    _ZTIN4inet17MacAddressTagBaseE @1341 DATA
-    _ZTIN4inet17PacketProtocolTagE @1342 DATA
-    _ZTIN4inet18SignalPowerTagBaseE @1343 DATA
-    _ZTIN4inet18StationaryMobilityE @1344 DATA
-    _ZTIN4inet19IPhysicalLayerFrameE @1345 DATA
-    _ZTIN4inet19IRegionTaggedObjectE @1346 DATA
-    _ZTIN4inet19IntrusivePtrCounterINS_5ChunkEEE @1347 DATA
-    _ZTIN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1348 DATA
-    _ZTIN4inet19LayeredProtocolBaseE @1349 DATA
-    _ZTIN4inet22StationaryMobilityBaseE @1350 DATA
-    _ZTIN4inet5ChunkE @1351 DATA
-    _ZTIN4inet5CoordE @1352 DATA
-    _ZTIN4inet5power13IEnergySourceE @1353 DATA
-    _ZTIN4inet5power15IEnergyConsumerE @1354 DATA
-    _ZTIN4inet5power15IEpEnergySourceE @1355 DATA
-    _ZTIN4inet5power17IEpEnergyConsumerE @1356 DATA
-    _ZTIN4inet5units5valueIdNS0_5units1mEEE @1357 DATA
-    _ZTIN4inet5units5valueIdNS0_7composeINS0_5units1mENS0_3powINS3_1sELin1ELi1EEEEEEE @1358 DATA
-    _ZTIN4inet5units5valueIdNS0_7composeINS2_INS2_INS0_5units1mENS2_INS3_2kgENS0_3powINS3_1sELin2ELi1EEEEEEES4_EENS6_IS7_Lin1ELi1EEEEEEE @1359 DATA
-    _ZTIN4inet6PacketE @1360 DATA
-    _ZTIN4inet7SnirIndE @1361 DATA
-    _ZTIN4inet7TagBaseE @1362 DATA
-    _ZTIN4inet8queueing12IPacketQueueE @1363 DATA
-    _ZTIN4inet8queueing16IPacketProcessorE @1364 DATA
-    _ZTIN4inet8queueing17IActivePacketSinkE @1365 DATA
-    _ZTIN4inet8queueing17IPacketCollectionE @1366 DATA
-    _ZTIN4inet8queueing18IPassivePacketSinkE @1367 DATA
-    _ZTIN4inet8queueing19PacketProcessorBaseE @1368 DATA
-    _ZTIN4inet8queueing20IPassivePacketSourceE @1369 DATA
-    _ZTIN4inet9IMobilityE @1370 DATA
-    _ZTIN5flora10LoRaMediumE @1371 DATA
-    _ZTIN5flora11LoRaGWRadioE @1372 DATA
-    _ZTIN5flora11LoRaOptionsE @1373 DATA
-    _ZTIN5flora12LoRaMacFrameE @1374 DATA
-    _ZTIN5flora12LoRaReceiverE @1375 DATA
-    _ZTIN5flora13AppPacketTypeE @1376 DATA
-    _ZTIN5flora13LoRaAppPacketE @1377 DATA
-    _ZTIN5flora13LoRaReceptionE @1378 DATA
-    _ZTIN5flora13SimpleLoRaAppE @1379 DATA
-    _ZTIN5flora14LoRaModulationE @1380 DATA
-    _ZTIN5flora15LoRaAnalogModelE @1381 DATA
-    _ZTIN5flora15LoRaHataOkumuraE @1382 DATA
-    _ZTIN5flora15LoRaMediumCacheE @1383 DATA
-    _ZTIN5flora15LoRaPhyPreambleE @1384 DATA
-    _ZTIN5flora15LoRaTransmitterE @1385 DATA
-    _ZTIN5flora15PacketForwarderE @1386 DATA
-    _ZTIN5flora16LoRaPathLossOuluE @1387 DATA
-    _ZTIN5flora16LoRaTransmissionE @1388 DATA
-    _ZTIN5flora16NetworkServerAppE @1389 DATA
-    _ZTIN5flora17LoRaBandListeningE @1390 DATA
-    _ZTIN5flora17LoRaNeighborCacheE @1391 DATA
-    _ZTIN5flora17LoRaTagDescriptorE @1392 DATA
-    _ZTIN5flora18LoRaEnergyConsumerE @1393 DATA
-    _ZTIN5flora18LoRaMacControlInfoE @1394 DATA
-    _ZTIN5flora20LoRaRadioCommandCodeE @1395 DATA
-    _ZTIN5flora21LoRaOptionsDescriptorE @1396 DATA
-    _ZTIN5flora22LoRaLogNormalShadowingE @1397 DATA
-    _ZTIN5flora22LoRaMacFrameDescriptorE @1398 DATA
-    _ZTIN5flora23LoRaAppPacketDescriptorE @1399 DATA
-    _ZTIN5flora23LoRaReceptionIndicationE @1400 DATA
-    _ZTIN5flora23LoRaTransmissionRequestE @1401 DATA
-    _ZTIN5flora25LoRaConfigureRadioCommandE @1402 DATA
-    _ZTIN5flora25LoRaPhyPreambleDescriptorE @1403 DATA
-    _ZTIN5flora28LoRaMacControlInfoDescriptorE @1404 DATA
-    _ZTIN5flora33LoRaReceptionIndicationDescriptorE @1405 DATA
-    _ZTIN5flora33LoRaTransmissionRequestDescriptorE @1406 DATA
-    _ZTIN5flora35LoRaConfigureRadioCommandDescriptorE @1407 DATA
-    _ZTIN5flora7LoRaMacE @1408 DATA
-    _ZTIN5flora7LoRaTagE @1409 DATA
-    _ZTIN5flora9LoRaGWMacE @1410 DATA
-    _ZTIN5flora9LoRaRadioE @1411 DATA
-    _ZTIN7omnetpp10cComponentE @1412 DATA
-    _ZTIN7omnetpp10cExceptionE @1413 DATA
-    _ZTIN7omnetpp10cIListenerE @1414 DATA
-    _ZTIN7omnetpp10cSoftOwnerE @1415 DATA
-    _ZTIN7omnetpp10cWatchBaseE @1416 DATA
-    _ZTIN7omnetpp11noncopyableE @1417 DATA
-    _ZTIN7omnetpp12cNamedObjectE @1418 DATA
-    _ZTIN7omnetpp12cOwnedObjectE @1419 DATA
-    _ZTIN7omnetpp13cRuntimeErrorE @1420 DATA
-    _ZTIN7omnetpp13cSimpleModuleE @1421 DATA
-    _ZTIN7omnetpp16cClassDescriptorE @1422 DATA
-    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5CoordEEE @1423 DATA
-    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_5units1mEEEEE @1424 DATA
-    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEEEE @1425 DATA
-    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS4_INS4_INS2_5units1mENS4_INS5_2kgENS2_3powINS5_1sELin2ELi1EEEEEEES6_EENS8_IS9_Lin1ELi1EEEEEEEEE @1426 DATA
-    _ZTIN7omnetpp21cGenericReadonlyWatchINS_4cFSMEEE @1427 DATA
-    _ZTIN7omnetpp21cGenericReadonlyWatchINS_7SimTimeEEE @1428 DATA
-    _ZTIN7omnetpp23cGenericAssignableWatchIdEE @1429 DATA
-    _ZTIN7omnetpp23cGenericAssignableWatchIiEE @1430 DATA
-    _ZTIN7omnetpp23cGenericAssignableWatchIlEE @1431 DATA
-    _ZTIN7omnetpp23cNoncopyableOwnedObjectE @1432 DATA
-    _ZTIN7omnetpp4cFSME @1433 DATA
-    _ZTIN7omnetpp6cEventE @1434 DATA
-    _ZTIN7omnetpp7SimTimeE @1435 DATA
-    _ZTIN7omnetpp7cModuleE @1436 DATA
-    _ZTIN7omnetpp7cObjectE @1437 DATA
-    _ZTIN7omnetpp7cPacketE @1438 DATA
-    _ZTIN7omnetpp8cMessageE @1439 DATA
-    _ZTIN7omnetpp9cListenerE @1440 DATA
-    _ZTIPKN4inet13physicallayer11ScalarNoiseE @1441 DATA
-    _ZTIPKN4inet13physicallayer13IScalarSignalE @1442 DATA
-    _ZTIPKN4inet13physicallayer17INarrowbandSignalE @1443 DATA
-    _ZTIPKN5flora13LoRaReceptionE @1444 DATA
-    _ZTIPKN5flora16LoRaTransmissionE @1445 DATA
-    _ZTIPKN5flora17LoRaBandListeningE @1446 DATA
-    _ZTIPKN7omnetpp7cModuleE @1447 DATA
-    _ZTIPKN7omnetpp7cObjectE @1448 DATA
-    _ZTIPN4inet10MacAddressE @1449 DATA
-    _ZTIPN4inet13physicallayer11RadioMediumE @1450 DATA
-    _ZTIPN4inet13physicallayer14WirelessSignalE @1451 DATA
-    _ZTIPN4inet13physicallayer21ConfigureRadioCommandE @1452 DATA
-    _ZTIPN4inet13physicallayer6IRadioE @1453 DATA
-    _ZTIPN4inet15IInterfaceTableE @1454 DATA
-    _ZTIPN4inet18StationaryMobilityE @1455 DATA
-    _ZTIPN4inet6PacketE @1456 DATA
-    _ZTIPN5flora10LoRaMediumE @1457 DATA
-    _ZTIPN5flora11LoRaOptionsE @1458 DATA
-    _ZTIPN5flora12LoRaMacFrameE @1459 DATA
-    _ZTIPN5flora13LoRaAppPacketE @1460 DATA
-    _ZTIPN5flora15LoRaPhyPreambleE @1461 DATA
-    _ZTIPN5flora18LoRaMacControlInfoE @1462 DATA
-    _ZTIPN5flora22LoRaLogNormalShadowingE @1463 DATA
-    _ZTIPN5flora23LoRaReceptionIndicationE @1464 DATA
-    _ZTIPN5flora23LoRaTransmissionRequestE @1465 DATA
-    _ZTIPN5flora25LoRaConfigureRadioCommandE @1466 DATA
-    _ZTIPN5flora7LoRaMacE @1467 DATA
-    _ZTIPN5flora7LoRaTagE @1468 DATA
-    _ZTIPN5flora9LoRaGWMacE @1469 DATA
-    _ZTIPN5flora9LoRaRadioE @1470 DATA
-    _ZTIPN7omnetpp7cObjectE @1471 DATA
-    _ZTSN4inet10ILifecycleE @1472 DATA
-    _ZTSN4inet10MacAddressE @1473 DATA
-    _ZTSN4inet10NodeStatusE @1474 DATA
-    _ZTSN4inet11FieldsChunkE @1475 DATA
-    _ZTSN4inet12ErrorRateIndE @1476 DATA
-    _ZTSN4inet12IMacProtocolE @1477 DATA
-    _ZTSN4inet12InterfaceIndE @1478 DATA
-    _ZTSN4inet12IntervalTree8IntervalE @1479 DATA
-    _ZTSN4inet12MobilityBaseE @1480 DATA
-    _ZTSN4inet12StringFormat18IDirectiveResolverE @1481 DATA
-    _ZTSN4inet13ITaggedObjectE @1482 DATA
-    _ZTSN4inet13MacAddressIndE @1483 DATA
-    _ZTSN4inet13MacAddressReqE @1484 DATA
-    _ZTSN4inet13SignalTagBaseE @1485 DATA
-    _ZTSN4inet13SignalTimeIndE @1486 DATA
-    _ZTSN4inet13physicallayer10IListeningE @1487 DATA
-    _ZTSN4inet13physicallayer10IReceptionE @1488 DATA
-    _ZTSN4inet13physicallayer11IErrorModelE @1489 DATA
-    _ZTSN4inet13physicallayer11IModulationE @1490 DATA
-    _ZTSN4inet13physicallayer11RadioMediumE @1491 DATA
-    _ZTSN4inet13physicallayer11ScalarNoiseE @1492 DATA
-    _ZTSN4inet13physicallayer12IAnalogModelE @1493 DATA
-    _ZTSN4inet13physicallayer12IRadioMediumE @1494 DATA
-    _ZTSN4inet13physicallayer12ITransmitterE @1495 DATA
-    _ZTSN4inet13physicallayer12PathLossBaseE @1496 DATA
-    _ZTSN4inet13physicallayer12ReceiverBaseE @1497 DATA
-    _ZTSN4inet13physicallayer13BandListeningE @1498 DATA
-    _ZTSN4inet13physicallayer13FlatRadioBaseE @1499 DATA
-    _ZTSN4inet13physicallayer13IScalarSignalE @1500 DATA
-    _ZTSN4inet13physicallayer13ITransmissionE @1501 DATA
-    _ZTSN4inet13physicallayer13ListeningBaseE @1502 DATA
-    _ZTSN4inet13physicallayer13ReceptionBaseE @1503 DATA
-    _ZTSN4inet13physicallayer14INeighborCacheE @1504 DATA
-    _ZTSN4inet13physicallayer14WirelessSignalE @1505 DATA
-    _ZTSN4inet13physicallayer15AnalogModelBaseE @1506 DATA
-    _ZTSN4inet13physicallayer15IApskModulationE @1507 DATA
-    _ZTSN4inet13physicallayer15IWirelessSignalE @1508 DATA
-    _ZTSN4inet13physicallayer15ScalarReceptionE @1509 DATA
-    _ZTSN4inet13physicallayer15TransmitterBaseE @1510 DATA
-    _ZTSN4inet13physicallayer16FlatReceiverBaseE @1511 DATA
-    _ZTSN4inet13physicallayer16SnirReceiverBaseE @1512 DATA
-    _ZTSN4inet13physicallayer16TransmissionBaseE @1513 DATA
-    _ZTSN4inet13physicallayer17FlatReceptionBaseE @1514 DATA
-    _ZTSN4inet13physicallayer17FreeSpacePathLossE @1515 DATA
-    _ZTSN4inet13physicallayer17IMediumLimitCacheE @1516 DATA
-    _ZTSN4inet13physicallayer17INarrowbandSignalE @1517 DATA
-    _ZTSN4inet13physicallayer17PhysicalLayerBaseE @1518 DATA
-    _ZTSN4inet13physicallayer18ApskModulationBaseE @1519 DATA
-    _ZTSN4inet13physicallayer18ISignalAnalogModelE @1520 DATA
-    _ZTSN4inet13physicallayer19FlatTransmitterBaseE @1521 DATA
-    _ZTSN4inet13physicallayer19NarrowbandNoiseBaseE @1522 DATA
-    _ZTSN4inet13physicallayer19NarrowbandRadioBaseE @1523 DATA
-    _ZTSN4inet13physicallayer21ConfigureRadioCommandE @1524 DATA
-    _ZTSN4inet13physicallayer21IReceptionAnalogModelE @1525 DATA
-    _ZTSN4inet13physicallayer21ScalarAnalogModelBaseE @1526 DATA
-    _ZTSN4inet13physicallayer22NarrowbandReceiverBaseE @1527 DATA
-    _ZTSN4inet13physicallayer23NarrowbandReceptionBaseE @1528 DATA
-    _ZTSN4inet13physicallayer24ITransmissionAnalogModelE @1529 DATA
-    _ZTSN4inet13physicallayer25NarrowbandTransmitterBaseE @1530 DATA
-    _ZTSN4inet13physicallayer26StateBasedEpEnergyConsumerE @1531 DATA
-    _ZTSN4inet13physicallayer5RadioE @1532 DATA
-    _ZTSN4inet13physicallayer6INoiseE @1533 DATA
-    _ZTSN4inet13physicallayer6IRadioE @1534 DATA
-    _ZTSN4inet13physicallayer6SignalE @1535 DATA
-    _ZTSN4inet13physicallayer9IPathLossE @1536 DATA
-    _ZTSN4inet13physicallayer9IReceiverE @1537 DATA
-    _ZTSN4inet13physicallayer9NoiseBaseE @1538 DATA
-    _ZTSN4inet14IPhysicalLayerE @1539 DATA
-    _ZTSN4inet14SignalPowerIndE @1540 DATA
-    _ZTSN4inet14SignalPowerReqE @1541 DATA
-    _ZTSN4inet15IInterfaceTableE @1542 DATA
-    _ZTSN4inet15MacProtocolBaseE @1543 DATA
-    _ZTSN4inet15OperationalBaseE @1544 DATA
-    _ZTSN4inet15ProtocolTagBaseE @1545 DATA
-    _ZTSN4inet16IPrintableObjectE @1546 DATA
-    _ZTSN4inet16InterfaceTagBaseE @1547 DATA
-    _ZTSN4inet16NetworkInterfaceE @1548 DATA
-    _ZTSN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1549 DATA
-    _ZTSN4inet17MacAddressTagBaseE @1550 DATA
-    _ZTSN4inet17PacketProtocolTagE @1551 DATA
-    _ZTSN4inet18SignalPowerTagBaseE @1552 DATA
-    _ZTSN4inet18StationaryMobilityE @1553 DATA
-    _ZTSN4inet19IPhysicalLayerFrameE @1554 DATA
-    _ZTSN4inet19IRegionTaggedObjectE @1555 DATA
-    _ZTSN4inet19IntrusivePtrCounterINS_5ChunkEEE @1556 DATA
-    _ZTSN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1557 DATA
-    _ZTSN4inet19LayeredProtocolBaseE @1558 DATA
-    _ZTSN4inet22StationaryMobilityBaseE @1559 DATA
-    _ZTSN4inet5ChunkE @1560 DATA
-    _ZTSN4inet5CoordE @1561 DATA
-    _ZTSN4inet5power13IEnergySourceE @1562 DATA
-    _ZTSN4inet5power15IEnergyConsumerE @1563 DATA
-    _ZTSN4inet5power15IEpEnergySourceE @1564 DATA
-    _ZTSN4inet5power17IEpEnergyConsumerE @1565 DATA
-    _ZTSN4inet5units5valueIdNS0_5units1mEEE @1566 DATA
-    _ZTSN4inet5units5valueIdNS0_7composeINS0_5units1mENS0_3powINS3_1sELin1ELi1EEEEEEE @1567 DATA
-    _ZTSN4inet5units5valueIdNS0_7composeINS2_INS2_INS0_5units1mENS2_INS3_2kgENS0_3powINS3_1sELin2ELi1EEEEEEES4_EENS6_IS7_Lin1ELi1EEEEEEE @1568 DATA
-    _ZTSN4inet6PacketE @1569 DATA
-    _ZTSN4inet7SnirIndE @1570 DATA
-    _ZTSN4inet7TagBaseE @1571 DATA
-    _ZTSN4inet8queueing12IPacketQueueE @1572 DATA
-    _ZTSN4inet8queueing16IPacketProcessorE @1573 DATA
-    _ZTSN4inet8queueing17IActivePacketSinkE @1574 DATA
-    _ZTSN4inet8queueing17IPacketCollectionE @1575 DATA
-    _ZTSN4inet8queueing18IPassivePacketSinkE @1576 DATA
-    _ZTSN4inet8queueing19PacketProcessorBaseE @1577 DATA
-    _ZTSN4inet8queueing20IPassivePacketSourceE @1578 DATA
-    _ZTSN4inet9IMobilityE @1579 DATA
-    _ZTSN5flora10LoRaMediumE @1580 DATA
-    _ZTSN5flora11LoRaGWRadioE @1581 DATA
-    _ZTSN5flora11LoRaOptionsE @1582 DATA
-    _ZTSN5flora12LoRaMacFrameE @1583 DATA
-    _ZTSN5flora12LoRaReceiverE @1584 DATA
-    _ZTSN5flora13AppPacketTypeE @1585 DATA
-    _ZTSN5flora13LoRaAppPacketE @1586 DATA
-    _ZTSN5flora13LoRaReceptionE @1587 DATA
-    _ZTSN5flora13SimpleLoRaAppE @1588 DATA
-    _ZTSN5flora14LoRaModulationE @1589 DATA
-    _ZTSN5flora15LoRaAnalogModelE @1590 DATA
-    _ZTSN5flora15LoRaHataOkumuraE @1591 DATA
-    _ZTSN5flora15LoRaMediumCacheE @1592 DATA
-    _ZTSN5flora15LoRaPhyPreambleE @1593 DATA
-    _ZTSN5flora15LoRaTransmitterE @1594 DATA
-    _ZTSN5flora15PacketForwarderE @1595 DATA
-    _ZTSN5flora16LoRaPathLossOuluE @1596 DATA
-    _ZTSN5flora16LoRaTransmissionE @1597 DATA
-    _ZTSN5flora16NetworkServerAppE @1598 DATA
-    _ZTSN5flora17LoRaBandListeningE @1599 DATA
-    _ZTSN5flora17LoRaNeighborCacheE @1600 DATA
-    _ZTSN5flora17LoRaTagDescriptorE @1601 DATA
-    _ZTSN5flora18LoRaEnergyConsumerE @1602 DATA
-    _ZTSN5flora18LoRaMacControlInfoE @1603 DATA
-    _ZTSN5flora20LoRaRadioCommandCodeE @1604 DATA
-    _ZTSN5flora21LoRaOptionsDescriptorE @1605 DATA
-    _ZTSN5flora22LoRaLogNormalShadowingE @1606 DATA
-    _ZTSN5flora22LoRaMacFrameDescriptorE @1607 DATA
-    _ZTSN5flora23LoRaAppPacketDescriptorE @1608 DATA
-    _ZTSN5flora23LoRaReceptionIndicationE @1609 DATA
-    _ZTSN5flora23LoRaTransmissionRequestE @1610 DATA
-    _ZTSN5flora25LoRaConfigureRadioCommandE @1611 DATA
-    _ZTSN5flora25LoRaPhyPreambleDescriptorE @1612 DATA
-    _ZTSN5flora28LoRaMacControlInfoDescriptorE @1613 DATA
-    _ZTSN5flora33LoRaReceptionIndicationDescriptorE @1614 DATA
-    _ZTSN5flora33LoRaTransmissionRequestDescriptorE @1615 DATA
-    _ZTSN5flora35LoRaConfigureRadioCommandDescriptorE @1616 DATA
-    _ZTSN5flora7LoRaMacE @1617 DATA
-    _ZTSN5flora7LoRaTagE @1618 DATA
-    _ZTSN5flora9LoRaGWMacE @1619 DATA
-    _ZTSN5flora9LoRaRadioE @1620 DATA
-    _ZTSN7omnetpp10cComponentE @1621 DATA
-    _ZTSN7omnetpp10cExceptionE @1622 DATA
-    _ZTSN7omnetpp10cIListenerE @1623 DATA
-    _ZTSN7omnetpp10cSoftOwnerE @1624 DATA
-    _ZTSN7omnetpp10cWatchBaseE @1625 DATA
-    _ZTSN7omnetpp11noncopyableE @1626 DATA
-    _ZTSN7omnetpp12cNamedObjectE @1627 DATA
-    _ZTSN7omnetpp12cOwnedObjectE @1628 DATA
-    _ZTSN7omnetpp13cRuntimeErrorE @1629 DATA
-    _ZTSN7omnetpp13cSimpleModuleE @1630 DATA
-    _ZTSN7omnetpp16cClassDescriptorE @1631 DATA
-    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5CoordEEE @1632 DATA
-    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_5units1mEEEEE @1633 DATA
-    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEEEE @1634 DATA
-    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS4_INS4_INS2_5units1mENS4_INS5_2kgENS2_3powINS5_1sELin2ELi1EEEEEEES6_EENS8_IS9_Lin1ELi1EEEEEEEEE @1635 DATA
-    _ZTSN7omnetpp21cGenericReadonlyWatchINS_4cFSMEEE @1636 DATA
-    _ZTSN7omnetpp21cGenericReadonlyWatchINS_7SimTimeEEE @1637 DATA
-    _ZTSN7omnetpp23cGenericAssignableWatchIdEE @1638 DATA
-    _ZTSN7omnetpp23cGenericAssignableWatchIiEE @1639 DATA
-    _ZTSN7omnetpp23cGenericAssignableWatchIlEE @1640 DATA
-    _ZTSN7omnetpp23cNoncopyableOwnedObjectE @1641 DATA
-    _ZTSN7omnetpp4cFSME @1642 DATA
-    _ZTSN7omnetpp6cEventE @1643 DATA
-    _ZTSN7omnetpp7SimTimeE @1644 DATA
-    _ZTSN7omnetpp7cModuleE @1645 DATA
-    _ZTSN7omnetpp7cObjectE @1646 DATA
-    _ZTSN7omnetpp7cPacketE @1647 DATA
-    _ZTSN7omnetpp8cMessageE @1648 DATA
-    _ZTSN7omnetpp9cListenerE @1649 DATA
-    _ZTSPKN4inet13physicallayer11ScalarNoiseE @1650 DATA
-    _ZTSPKN4inet13physicallayer13IScalarSignalE @1651 DATA
-    _ZTSPKN4inet13physicallayer17INarrowbandSignalE @1652 DATA
-    _ZTSPKN5flora13LoRaReceptionE @1653 DATA
-    _ZTSPKN5flora16LoRaTransmissionE @1654 DATA
-    _ZTSPKN5flora17LoRaBandListeningE @1655 DATA
-    _ZTSPKN7omnetpp7cModuleE @1656 DATA
-    _ZTSPKN7omnetpp7cObjectE @1657 DATA
-    _ZTSPN4inet10MacAddressE @1658 DATA
-    _ZTSPN4inet13physicallayer11RadioMediumE @1659 DATA
-    _ZTSPN4inet13physicallayer14WirelessSignalE @1660 DATA
-    _ZTSPN4inet13physicallayer21ConfigureRadioCommandE @1661 DATA
-    _ZTSPN4inet13physicallayer6IRadioE @1662 DATA
-    _ZTSPN4inet15IInterfaceTableE @1663 DATA
-    _ZTSPN4inet18StationaryMobilityE @1664 DATA
-    _ZTSPN4inet6PacketE @1665 DATA
-    _ZTSPN5flora10LoRaMediumE @1666 DATA
-    _ZTSPN5flora11LoRaOptionsE @1667 DATA
-    _ZTSPN5flora12LoRaMacFrameE @1668 DATA
-    _ZTSPN5flora13LoRaAppPacketE @1669 DATA
-    _ZTSPN5flora15LoRaPhyPreambleE @1670 DATA
-    _ZTSPN5flora18LoRaMacControlInfoE @1671 DATA
-    _ZTSPN5flora22LoRaLogNormalShadowingE @1672 DATA
-    _ZTSPN5flora23LoRaReceptionIndicationE @1673 DATA
-    _ZTSPN5flora23LoRaTransmissionRequestE @1674 DATA
-    _ZTSPN5flora25LoRaConfigureRadioCommandE @1675 DATA
-    _ZTSPN5flora7LoRaMacE @1676 DATA
-    _ZTSPN5flora7LoRaTagE @1677 DATA
-    _ZTSPN5flora9LoRaGWMacE @1678 DATA
-    _ZTSPN5flora9LoRaRadioE @1679 DATA
-    _ZTSPN7omnetpp7cObjectE @1680 DATA
-    _ZTTN5flora11LoRaGWRadioE @1681 DATA
-    _ZTTN5flora12LoRaReceiverE @1682 DATA
-    _ZTTN5flora13LoRaReceptionE @1683 DATA
-    _ZTTN5flora15LoRaAnalogModelE @1684 DATA
-    _ZTTN5flora15LoRaTransmitterE @1685 DATA
-    _ZTTN5flora16LoRaTransmissionE @1686 DATA
-    _ZTTN5flora18LoRaEnergyConsumerE @1687 DATA
-    _ZTTN5flora9LoRaRadioE @1688 DATA
-    _ZTVN4inet12IntervalTree8IntervalE @1689 DATA
-    _ZTVN5flora10LoRaMediumE @1690 DATA
-    _ZTVN5flora11LoRaGWRadioE @1691 DATA
-    _ZTVN5flora11LoRaOptionsE @1692 DATA
-    _ZTVN5flora12LoRaMacFrameE @1693 DATA
-    _ZTVN5flora12LoRaReceiverE @1694 DATA
-    _ZTVN5flora13LoRaAppPacketE @1695 DATA
-    _ZTVN5flora13LoRaReceptionE @1696 DATA
-    _ZTVN5flora13SimpleLoRaAppE @1697 DATA
-    _ZTVN5flora14LoRaModulationE @1698 DATA
-    _ZTVN5flora15LoRaAnalogModelE @1699 DATA
-    _ZTVN5flora15LoRaHataOkumuraE @1700 DATA
-    _ZTVN5flora15LoRaMediumCacheE @1701 DATA
-    _ZTVN5flora15LoRaPhyPreambleE @1702 DATA
-    _ZTVN5flora15LoRaTransmitterE @1703 DATA
-    _ZTVN5flora15PacketForwarderE @1704 DATA
-    _ZTVN5flora16LoRaPathLossOuluE @1705 DATA
-    _ZTVN5flora16LoRaTransmissionE @1706 DATA
-    _ZTVN5flora16NetworkServerAppE @1707 DATA
-    _ZTVN5flora17LoRaBandListeningE @1708 DATA
-    _ZTVN5flora17LoRaNeighborCacheE @1709 DATA
-    _ZTVN5flora17LoRaTagDescriptorE @1710 DATA
-    _ZTVN5flora18LoRaEnergyConsumerE @1711 DATA
-    _ZTVN5flora18LoRaMacControlInfoE @1712 DATA
-    _ZTVN5flora21LoRaOptionsDescriptorE @1713 DATA
-    _ZTVN5flora22LoRaLogNormalShadowingE @1714 DATA
-    _ZTVN5flora22LoRaMacFrameDescriptorE @1715 DATA
-    _ZTVN5flora23LoRaAppPacketDescriptorE @1716 DATA
-    _ZTVN5flora23LoRaReceptionIndicationE @1717 DATA
-    _ZTVN5flora23LoRaTransmissionRequestE @1718 DATA
-    _ZTVN5flora25LoRaConfigureRadioCommandE @1719 DATA
-    _ZTVN5flora25LoRaPhyPreambleDescriptorE @1720 DATA
-    _ZTVN5flora28LoRaMacControlInfoDescriptorE @1721 DATA
-    _ZTVN5flora33LoRaReceptionIndicationDescriptorE @1722 DATA
-    _ZTVN5flora33LoRaTransmissionRequestDescriptorE @1723 DATA
-    _ZTVN5flora35LoRaConfigureRadioCommandDescriptorE @1724 DATA
-    _ZTVN5flora7LoRaMacE @1725 DATA
-    _ZTVN5flora7LoRaTagE @1726 DATA
-    _ZTVN5flora9LoRaGWMacE @1727 DATA
-    _ZTVN5flora9LoRaRadioE @1728 DATA
-    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5CoordEEE @1729 DATA
-    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_5units1mEEEEE @1730 DATA
-    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEEEE @1731 DATA
-    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS4_INS4_INS2_5units1mENS4_INS5_2kgENS2_3powINS5_1sELin2ELi1EEEEEEES6_EENS8_IS9_Lin1ELi1EEEEEEEEE @1732 DATA
-    _ZTVN7omnetpp21cGenericReadonlyWatchINS_4cFSMEEE @1733 DATA
-    _ZTVN7omnetpp21cGenericReadonlyWatchINS_7SimTimeEEE @1734 DATA
-    _ZTVN7omnetpp23cGenericAssignableWatchIdEE @1735 DATA
-    _ZTVN7omnetpp23cGenericAssignableWatchIiEE @1736 DATA
-    _ZTVN7omnetpp23cGenericAssignableWatchIlEE @1737 DATA
-    _ZThn16_N5flora12LoRaMacFrameD0Ev @1738
-    _ZThn16_N5flora12LoRaMacFrameD1Ev @1739
-    _ZThn16_N5flora13LoRaAppPacketD0Ev @1740
-    _ZThn16_N5flora13LoRaAppPacketD1Ev @1741
-    _ZThn16_N5flora15LoRaPhyPreambleD0Ev @1742
-    _ZThn16_N5flora15LoRaPhyPreambleD1Ev @1743
-    _ZThn16_N5flora7LoRaTagD0Ev @1744
-    _ZThn16_N5flora7LoRaTagD1Ev @1745
-    _ZThn200_N5flora15LoRaHataOkumuraD0Ev @1746
-    _ZThn200_N5flora15LoRaHataOkumuraD1Ev @1747
-    _ZThn200_N5flora15LoRaMediumCache11removeRadioEPKN4inet13physicallayer6IRadioE @1748
-    _ZThn200_N5flora15LoRaMediumCache8addRadioEPKN4inet13physicallayer6IRadioE @1749
-    _ZThn200_N5flora15LoRaMediumCacheD0Ev @1750
-    _ZThn200_N5flora15LoRaMediumCacheD1Ev @1751
-    _ZThn200_N5flora16LoRaPathLossOuluD0Ev @1752
-    _ZThn200_N5flora16LoRaPathLossOuluD1Ev @1753
-    _ZThn200_N5flora22LoRaLogNormalShadowingD0Ev @1754
-    _ZThn200_N5flora22LoRaLogNormalShadowingD1Ev @1755
-    _ZThn200_NK5flora15LoRaHataOkumura13printToStreamERSoii @1756
-    _ZThn200_NK5flora15LoRaHataOkumura15computePathLossEN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEENS3_IdS9_EENS3_IdS6_EE @1757
-    _ZThn200_NK5flora15LoRaMediumCache11getMaxSpeedEv @1758
-    _ZThn200_NK5flora15LoRaMediumCache13printToStreamERSoii @1759
-    _ZThn200_NK5flora15LoRaMediumCache17getMaxAntennaGainEv @1760
-    _ZThn200_NK5flora15LoRaMediumCache20getMaxConstraintAreaEv @1761
-    _ZThn200_NK5flora15LoRaMediumCache20getMinConstraintAreaEv @1762
-    _ZThn200_NK5flora15LoRaMediumCache20getMinReceptionPowerEv @1763
-    _ZThn200_NK5flora15LoRaMediumCache22getMinInterferenceTimeEv @1764
-    _ZThn200_NK5flora15LoRaMediumCache23getMaxInterferenceRangeEPKN4inet13physicallayer6IRadioE @1765
-    _ZThn200_NK5flora15LoRaMediumCache23getMaxInterferenceRangeEv @1766
-    _ZThn200_NK5flora15LoRaMediumCache23getMaxTransmissionPowerEv @1767
-    _ZThn200_NK5flora15LoRaMediumCache23getMinInterferencePowerEv @1768
-    _ZThn200_NK5flora15LoRaMediumCache24getMaxCommunicationRangeEPKN4inet13physicallayer6IRadioE @1769
-    _ZThn200_NK5flora15LoRaMediumCache24getMaxCommunicationRangeEv @1770
-    _ZThn200_NK5flora15LoRaMediumCache26getMaxTransmissionDurationEv @1771
-    _ZThn200_NK5flora16LoRaPathLossOulu15computePathLossEN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEENS3_IdS9_EENS3_IdS6_EE @1772
-    _ZThn200_NK5flora22LoRaLogNormalShadowing13printToStreamERSoii @1773
-    _ZThn200_NK5flora22LoRaLogNormalShadowing15computePathLossEN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEENS3_IdS9_EENS3_IdS6_EE @1774
-    _ZThn216_N4inet13physicallayer26StateBasedEpEnergyConsumerD0Ev @1775
-    _ZThn216_N4inet13physicallayer26StateBasedEpEnergyConsumerD1Ev @1776
-    _ZThn216_N5flora10LoRaMediumD0Ev @1777
-    _ZThn216_N5flora10LoRaMediumD1Ev @1778
-    _ZThn216_N5flora11LoRaGWRadioD0Ev @1779
-    _ZThn216_N5flora11LoRaGWRadioD1Ev @1780
-    _ZThn216_N5flora13SimpleLoRaApp20handleOperationStageEPN4inet18LifecycleOperationEPNS1_13IDoneCallbackE @1781
-    _ZThn216_N5flora13SimpleLoRaAppD0Ev @1782
-    _ZThn216_N5flora13SimpleLoRaAppD1Ev @1783
-    _ZThn216_N5flora15PacketForwarder13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1784
-    _ZThn216_N5flora15PacketForwarderD0Ev @1785
-    _ZThn216_N5flora15PacketForwarderD1Ev @1786
-    _ZThn216_N5flora16NetworkServerApp13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1787
-    _ZThn216_N5flora16NetworkServerAppD0Ev @1788
-    _ZThn216_N5flora16NetworkServerAppD1Ev @1789
-    _ZThn216_N5flora17LoRaNeighborCache11removeRadioEPKN4inet13physicallayer6IRadioE @1790
-    _ZThn216_N5flora17LoRaNeighborCache8addRadioEPKN4inet13physicallayer6IRadioE @1791
-    _ZThn216_N5flora17LoRaNeighborCacheD0Ev @1792
-    _ZThn216_N5flora17LoRaNeighborCacheD1Ev @1793
-    _ZThn216_N5flora18LoRaEnergyConsumerD0Ev @1794
-    _ZThn216_N5flora18LoRaEnergyConsumerD1Ev @1795
-    _ZThn216_N5flora7LoRaMacD0Ev @1796
-    _ZThn216_N5flora7LoRaMacD1Ev @1797
-    _ZThn216_N5flora9LoRaGWMacD0Ev @1798
-    _ZThn216_N5flora9LoRaGWMacD1Ev @1799
-    _ZThn216_N5flora9LoRaRadioD0Ev @1800
-    _ZThn216_N5flora9LoRaRadioD1Ev @1801
-    _ZThn216_NK4inet13physicallayer26StateBasedEpEnergyConsumer19getPowerConsumptionEv @1802
-    _ZThn216_NK5flora17LoRaNeighborCache13printToStreamERSoii @1803
-    _ZThn216_NK5flora17LoRaNeighborCache15sendToNeighborsEPN4inet13physicallayer6IRadioEPKNS2_15IWirelessSignalEd @1804
-    _ZThn216_NK5flora18LoRaEnergyConsumer19getPowerConsumptionEv @1805
-    _ZThn224_N5flora18LoRaEnergyConsumer13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1806
-    _ZThn224_N5flora18LoRaEnergyConsumerD0Ev @1807
-    _ZThn224_N5flora18LoRaEnergyConsumerD1Ev @1808
-    _ZThn248_N5flora10LoRaMediumD0Ev @1809
-    _ZThn248_N5flora10LoRaMediumD1Ev @1810
-    _ZThn248_NK4inet13physicallayer11RadioMedium11getMaterialEv @1811
-    _ZThn248_NK4inet13physicallayer11RadioMedium11getPathLossEv @1812
-    _ZThn248_NK4inet13physicallayer11RadioMedium14getAnalogModelEv @1813
-    _ZThn248_NK4inet13physicallayer11RadioMedium14getPropagationEv @1814
-    _ZThn248_NK4inet13physicallayer11RadioMedium15getObstacleLossEv @1815
-    _ZThn248_NK4inet13physicallayer11RadioMedium16getNeighborCacheEv @1816
-    _ZThn248_NK4inet13physicallayer11RadioMedium18getBackgroundNoiseEv @1817
-    _ZThn248_NK4inet13physicallayer11RadioMedium19getMediumLimitCacheEv @1818
-    _ZThn248_NK4inet13physicallayer11RadioMedium21getCommunicationCacheEv @1819
-    _ZThn248_NK4inet13physicallayer11RadioMedium22getPhysicalEnvironmentEv @1820
-    _ZThn248_NK5flora10LoRaMedium18getReceptionResultEPKN4inet13physicallayer6IRadioEPKNS2_10IListeningEPKNS2_13ITransmissionE @1821
-    _ZThn24_N4inet5Chunk13getRegionTagsEv @1822
-    _ZThn280_N5flora11LoRaGWRadioD0Ev @1823
-    _ZThn280_N5flora11LoRaGWRadioD1Ev @1824
-    _ZThn280_N5flora7LoRaMac13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1825
-    _ZThn280_N5flora7LoRaMacD0Ev @1826
-    _ZThn280_N5flora7LoRaMacD1Ev @1827
-    _ZThn280_N5flora9LoRaGWMac13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1828
-    _ZThn280_N5flora9LoRaGWMacD0Ev @1829
-    _ZThn280_N5flora9LoRaGWMacD1Ev @1830
-    _ZThn280_N5flora9LoRaRadioD0Ev @1831
-    _ZThn280_N5flora9LoRaRadioD1Ev @1832
-    _ZThn360_N5flora7LoRaMacD0Ev @1833
-    _ZThn360_N5flora7LoRaMacD1Ev @1834
-    _ZThn368_N5flora7LoRaMac11getProviderEPN7omnetpp5cGateE @1835
-    _ZThn368_N5flora7LoRaMac25handlePullPacketProcessedEPN4inet6PacketEPN7omnetpp5cGateEb @1836
-    _ZThn368_N5flora7LoRaMac26handleCanPullPacketChangedEPN7omnetpp5cGateE @1837
-    _ZThn368_N5flora7LoRaMacD0Ev @1838
-    _ZThn368_N5flora7LoRaMacD1Ev @1839
-    _ZTv0_n104_NK4inet13physicallayer12ReceiverBase20getMinReceptionPowerEv @1840
-    _ZTv0_n104_NK4inet13physicallayer13ReceptionBase15getTransmissionEv @1841
-    _ZTv0_n104_NK4inet13physicallayer15TransmitterBase24getMaxCommunicationRangeEv @1842
-    _ZTv0_n104_NK4inet13physicallayer16FlatReceiverBase20getMinReceptionPowerEv @1843
-    _ZTv0_n104_NK4inet13physicallayer5Radio9getMediumEv @1844
-    _ZTv0_n104_NK5flora12LoRaReceiver20getMinReceptionPowerEv @1845
-    _ZTv0_n104_NK5flora15LoRaAnalogModel12computeNoiseEPKN4inet13physicallayer10IListeningEPKNS2_13IInterferenceE @1846
-    _ZTv0_n104_NK5flora9LoRaRadio9getMediumEv @1847
-    _ZTv0_n112_NK4inet13physicallayer13ReceptionBase12getStartTimeEv @1848
-    _ZTv0_n112_NK4inet13physicallayer15TransmitterBase23getMaxInterferenceRangeEv @1849
-    _ZTv0_n112_NK4inet13physicallayer16TransmissionBase16getTransmitterIdEv @1850
-    _ZTv0_n112_NK5flora12LoRaReceiver15createListeningEPKN4inet13physicallayer6IRadioEN7omnetpp7SimTimeES7_RKNS1_5CoordESA_ @1851
-    _ZTv0_n112_NK5flora9LoRaRadio25getTransmissionInProgressEv @1852
-    _ZTv0_n120_NK4inet13physicallayer13ReceptionBase10getEndTimeEv @1853
-    _ZTv0_n120_NK4inet13physicallayer16TransmissionBase25getTransmitterAntennaGainEv @1854
-    _ZTv0_n120_NK5flora12LoRaReceiver24computeListeningDecisionEPKN4inet13physicallayer10IListeningEPKNS2_13IInterferenceE @1855
-    _ZTv0_n120_NK5flora15LoRaAnalogModel11computeSNIREPKN4inet13physicallayer10IReceptionEPKNS2_6INoiseE @1856
-    _ZTv0_n120_NK5flora15LoRaTransmitter18createTransmissionEPKN4inet13physicallayer6IRadioEPKNS1_6PacketEN7omnetpp7SimTimeE @1857
-    _ZTv0_n120_NK5flora9LoRaRadio22getReceptionInProgressEv @1858
-    _ZTv0_n128_NK4inet13physicallayer16TransmissionBase9getMediumEv @1859
-    _ZTv0_n128_NK5flora12LoRaReceiver26computeIsReceptionPossibleEPKN4inet13physicallayer10IListeningEPKNS2_13ITransmissionE @1860
-    _ZTv0_n128_NK5flora9LoRaRadio24getTransmittedSignalPartEv @1861
-    _ZTv0_n136_NK4inet13physicallayer16TransmissionBase9getPacketEv @1862
-    _ZTv0_n136_NK5flora12LoRaReceiver26computeIsReceptionPossibleEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartE @1863
-    _ZTv0_n136_NK5flora9LoRaRadio21getReceivedSignalPartEv @1864
-    _ZTv0_n144_NK4inet13physicallayer13ReceptionBase20getPreambleStartTimeEv @1865
-    _ZTv0_n144_NK4inet13physicallayer16TransmissionBase12getStartTimeEv @1866
-    _ZTv0_n144_NK5flora12LoRaReceiver27computeIsReceptionAttemptedEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartEPKNS2_13IInterferenceE @1867
-    _ZTv0_n152_NK4inet13physicallayer13ReceptionBase18getPreambleEndTimeEv @1868
-    _ZTv0_n152_NK4inet13physicallayer16TransmissionBase10getEndTimeEv @1869
-    _ZTv0_n152_NK5flora12LoRaReceiver28computeIsReceptionSuccessfulEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartEPKNS2_13IInterferenceEPKNS2_5ISnirE @1870
-    _ZTv0_n160_NK4inet13physicallayer13ReceptionBase18getHeaderStartTimeEv @1871
-    _ZTv0_n160_NK5flora12LoRaReceiver24computeReceptionDecisionEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartEPKNS2_13IInterferenceEPKNS2_5ISnirE @1872
-    _ZTv0_n168_NK4inet13physicallayer13ReceptionBase16getHeaderEndTimeEv @1873
-    _ZTv0_n168_NK5flora12LoRaReceiver22computeReceptionResultEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionEPKNS2_13IInterferenceEPKNS2_5ISnirEPKSt6vectorIPKNS2_18IReceptionDecisionESaISI_EE @1874
-    _ZTv0_n176_NK4inet13physicallayer13ReceptionBase16getDataStartTimeEv @1875
-    _ZTv0_n176_NK4inet13physicallayer16TransmissionBase20getPreambleStartTimeEv @1876
-    _ZTv0_n184_NK4inet13physicallayer13ReceptionBase14getDataEndTimeEv @1877
-    _ZTv0_n184_NK4inet13physicallayer16TransmissionBase18getPreambleEndTimeEv @1878
-    _ZTv0_n192_NK4inet13physicallayer13ReceptionBase11getDurationEv @1879
-    _ZTv0_n192_NK4inet13physicallayer16TransmissionBase18getHeaderStartTimeEv @1880
-    _ZTv0_n200_NK4inet13physicallayer16TransmissionBase16getHeaderEndTimeEv @1881
-    _ZTv0_n208_NK4inet13physicallayer13ReceptionBase19getPreambleDurationEv @1882
-    _ZTv0_n208_NK4inet13physicallayer16TransmissionBase16getDataStartTimeEv @1883
-    _ZTv0_n216_NK4inet13physicallayer13ReceptionBase17getHeaderDurationEv @1884
-    _ZTv0_n216_NK4inet13physicallayer16TransmissionBase14getDataEndTimeEv @1885
-    _ZTv0_n224_NK4inet13physicallayer13ReceptionBase15getDataDurationEv @1886
-    _ZTv0_n224_NK4inet13physicallayer16TransmissionBase11getDurationEv @1887
-    _ZTv0_n232_NK4inet13physicallayer13ReceptionBase16getStartPositionEv @1888
-    _ZTv0_n240_NK4inet13physicallayer13ReceptionBase14getEndPositionEv @1889
-    _ZTv0_n240_NK4inet13physicallayer16TransmissionBase19getPreambleDurationEv @1890
-    _ZTv0_n248_NK4inet13physicallayer13ReceptionBase19getStartOrientationEv @1891
-    _ZTv0_n248_NK4inet13physicallayer16TransmissionBase17getHeaderDurationEv @1892
-    _ZTv0_n24_N4inet13physicallayer12ReceiverBaseD0Ev @1893
-    _ZTv0_n24_N4inet13physicallayer12ReceiverBaseD1Ev @1894
-    _ZTv0_n24_N4inet13physicallayer13FlatRadioBaseD0Ev @1895
-    _ZTv0_n24_N4inet13physicallayer13FlatRadioBaseD1Ev @1896
-    _ZTv0_n24_N4inet13physicallayer13ReceptionBaseD0Ev @1897
-    _ZTv0_n24_N4inet13physicallayer13ReceptionBaseD1Ev @1898
-    _ZTv0_n24_N4inet13physicallayer15AnalogModelBaseD0Ev @1899
-    _ZTv0_n24_N4inet13physicallayer15AnalogModelBaseD1Ev @1900
-    _ZTv0_n24_N4inet13physicallayer15ScalarReceptionD0Ev @1901
-    _ZTv0_n24_N4inet13physicallayer15ScalarReceptionD1Ev @1902
-    _ZTv0_n24_N4inet13physicallayer15TransmitterBaseD0Ev @1903
-    _ZTv0_n24_N4inet13physicallayer15TransmitterBaseD1Ev @1904
-    _ZTv0_n24_N4inet13physicallayer16FlatReceiverBaseD0Ev @1905
-    _ZTv0_n24_N4inet13physicallayer16FlatReceiverBaseD1Ev @1906
-    _ZTv0_n24_N4inet13physicallayer16SnirReceiverBaseD0Ev @1907
-    _ZTv0_n24_N4inet13physicallayer16SnirReceiverBaseD1Ev @1908
-    _ZTv0_n24_N4inet13physicallayer16TransmissionBaseD0Ev @1909
-    _ZTv0_n24_N4inet13physicallayer16TransmissionBaseD1Ev @1910
-    _ZTv0_n24_N4inet13physicallayer17FlatReceptionBaseD0Ev @1911
-    _ZTv0_n24_N4inet13physicallayer17FlatReceptionBaseD1Ev @1912
-    _ZTv0_n24_N4inet13physicallayer19FlatTransmitterBaseD0Ev @1913
-    _ZTv0_n24_N4inet13physicallayer19FlatTransmitterBaseD1Ev @1914
-    _ZTv0_n24_N4inet13physicallayer19NarrowbandRadioBaseD0Ev @1915
-    _ZTv0_n24_N4inet13physicallayer19NarrowbandRadioBaseD1Ev @1916
-    _ZTv0_n24_N4inet13physicallayer21ScalarAnalogModelBaseD0Ev @1917
-    _ZTv0_n24_N4inet13physicallayer21ScalarAnalogModelBaseD1Ev @1918
-    _ZTv0_n24_N4inet13physicallayer22NarrowbandReceiverBaseD0Ev @1919
-    _ZTv0_n24_N4inet13physicallayer22NarrowbandReceiverBaseD1Ev @1920
-    _ZTv0_n24_N4inet13physicallayer23NarrowbandReceptionBaseD0Ev @1921
-    _ZTv0_n24_N4inet13physicallayer23NarrowbandReceptionBaseD1Ev @1922
-    _ZTv0_n24_N4inet13physicallayer25NarrowbandTransmitterBaseD0Ev @1923
-    _ZTv0_n24_N4inet13physicallayer25NarrowbandTransmitterBaseD1Ev @1924
-    _ZTv0_n24_N5flora11LoRaGWRadioD0Ev @1925
-    _ZTv0_n24_N5flora11LoRaGWRadioD1Ev @1926
-    _ZTv0_n24_N5flora12LoRaReceiverD0Ev @1927
-    _ZTv0_n24_N5flora12LoRaReceiverD1Ev @1928
-    _ZTv0_n24_N5flora13LoRaReceptionD0Ev @1929
-    _ZTv0_n24_N5flora13LoRaReceptionD1Ev @1930
-    _ZTv0_n24_N5flora15LoRaAnalogModelD0Ev @1931
-    _ZTv0_n24_N5flora15LoRaAnalogModelD1Ev @1932
-    _ZTv0_n24_N5flora15LoRaTransmitterD0Ev @1933
-    _ZTv0_n24_N5flora15LoRaTransmitterD1Ev @1934
-    _ZTv0_n24_N5flora16LoRaTransmissionD0Ev @1935
-    _ZTv0_n24_N5flora16LoRaTransmissionD1Ev @1936
-    _ZTv0_n24_N5flora9LoRaRadioD0Ev @1937
-    _ZTv0_n24_N5flora9LoRaRadioD1Ev @1938
-    _ZTv0_n24_NK4inet13physicallayer15ScalarReception8getPowerEv @1939
-    _ZTv0_n24_NK4inet13physicallayer23NarrowbandReceptionBase18getCenterFrequencyEv @1940
-    _ZTv0_n24_NK5flora13LoRaReception8getPowerEv @1941
-    _ZTv0_n24_NK5flora16LoRaTransmission18getCenterFrequencyEv @1942
-    _ZTv0_n24_NK5flora16LoRaTransmission8getPowerEv @1943
-    _ZTv0_n256_NK4inet13physicallayer13ReceptionBase17getEndOrientationEv @1944
-    _ZTv0_n256_NK4inet13physicallayer16TransmissionBase15getDataDurationEv @1945
-    _ZTv0_n264_NK4inet13physicallayer13ReceptionBase14getAnalogModelEv @1946
-    _ZTv0_n264_NK4inet13physicallayer16TransmissionBase16getStartPositionEv @1947
-    _ZTv0_n272_NK4inet13physicallayer16TransmissionBase14getEndPositionEv @1948
-    _ZTv0_n280_NK4inet13physicallayer16TransmissionBase19getStartOrientationEv @1949
-    _ZTv0_n288_NK4inet13physicallayer16TransmissionBase17getEndOrientationEv @1950
-    _ZTv0_n296_NK4inet13physicallayer16TransmissionBase14getAnalogModelEv @1951
-    _ZTv0_n32_NK4inet13physicallayer23NarrowbandReceptionBase12getBandwidthEv @1952
-    _ZTv0_n32_NK4inet13physicallayer26StateBasedEpEnergyConsumer15getEnergySourceEv @1953
-    _ZTv0_n32_NK4inet13physicallayer5Radio12getRadioGateEv @1954
-    _ZTv0_n32_NK5flora15LoRaAnalogModel13printToStreamERSoii @1955
-    _ZTv0_n32_NK5flora15LoRaTransmitter13printToStreamERSoii @1956
-    _ZTv0_n32_NK5flora16LoRaTransmission12getBandwidthEv @1957
-    _ZTv0_n32_NK5flora16LoRaTransmission13printToStreamERSoii @1958
-    _ZTv0_n32_NK5flora9LoRaRadio12getRadioGateEv @1959
-    _ZTv0_n40_NK4inet13physicallayer15ScalarReception15computeMinPowerEN7omnetpp7SimTimeES3_ @1960
-    _ZTv0_n40_NK4inet13physicallayer5Radio12getRadioModeEv @1961
-    _ZTv0_n40_NK5flora13LoRaReception15computeMinPowerEN7omnetpp7SimTimeES2_ @1962
-    _ZTv0_n40_NK5flora16LoRaTransmission15computeMinPowerEN7omnetpp7SimTimeES2_ @1963
-    _ZTv0_n40_NK5flora9LoRaRadio12getRadioModeEv @1964
-    _ZTv0_n56_NK4inet13physicallayer5Radio17getReceptionStateEv @1965
-    _ZTv0_n56_NK5flora9LoRaRadio17getReceptionStateEv @1966
-    _ZTv0_n64_NK4inet13physicallayer5Radio20getTransmissionStateEv @1967
-    _ZTv0_n64_NK5flora9LoRaRadio20getTransmissionStateEv @1968
-    _ZTv0_n72_NK4inet13physicallayer5Radio5getIdEv @1969
-    _ZTv0_n72_NK5flora9LoRaRadio5getIdEv @1970
-    _ZTv0_n80_NK4inet13physicallayer5Radio10getAntennaEv @1971
-    _ZTv0_n80_NK5flora9LoRaRadio10getAntennaEv @1972
-    _ZTv0_n88_NK4inet13physicallayer5Radio14getTransmitterEv @1973
-    _ZTv0_n88_NK5flora9LoRaRadio14getTransmitterEv @1974
-    _ZTv0_n96_NK4inet13physicallayer12ReceiverBase23getMinInterferencePowerEv @1975
-    _ZTv0_n96_NK4inet13physicallayer13ReceptionBase11getDurationEv @1976
-    _ZTv0_n96_NK4inet13physicallayer13ReceptionBase11getReceiverEv @1977
-    _ZTv0_n96_NK4inet13physicallayer15TransmitterBase11getMaxPowerEv @1978
-    _ZTv0_n96_NK4inet13physicallayer16TransmissionBase11getDurationEv @1979
-    _ZTv0_n96_NK4inet13physicallayer16TransmissionBase5getIdEv @1980
-    _ZTv0_n96_NK4inet13physicallayer19FlatTransmitterBase11getMaxPowerEv @1981
-    _ZTv0_n96_NK4inet13physicallayer5Radio11getReceiverEv @1982
-    _ZTv0_n96_NK5flora12LoRaReceiver23getMinInterferencePowerEv @1983
-    _ZTv0_n96_NK5flora15LoRaAnalogModel16computeReceptionEPKN4inet13physicallayer6IRadioEPKNS2_13ITransmissionEPKNS2_8IArrivalE @1984
-    _ZTv0_n96_NK5flora9LoRaRadio11getReceiverEv @1985
-    _ZTvn8_n144_NK5flora9LoRaRadio13printToStreamERSoii @1986
-    _ZTvn8_n24_N4inet13physicallayer13FlatRadioBaseD0Ev @1987
-    _ZTvn8_n24_N4inet13physicallayer13FlatRadioBaseD1Ev @1988
-    _ZTvn8_n24_N4inet13physicallayer19NarrowbandRadioBaseD0Ev @1989
-    _ZTvn8_n24_N4inet13physicallayer19NarrowbandRadioBaseD1Ev @1990
-    _ZTvn8_n24_N5flora11LoRaGWRadioD0Ev @1991
-    _ZTvn8_n24_N5flora11LoRaGWRadioD1Ev @1992
-    _ZTvn8_n24_N5flora9LoRaRadioD0Ev @1993
-    _ZTvn8_n24_N5flora9LoRaRadioD1Ev @1994
-    _ZZNK4inet5Chunk4peekIN5flora12LoRaMacFrameEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EEE_8__invokeESI_ @1995
-    _ZZNK4inet5Chunk4peekIN5flora12LoRaMacFrameEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EESA_SF_iE_8__invokeESI_SA_SF_i @1996
-    _ZZNK4inet5Chunk4peekIN5flora13LoRaAppPacketEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EEE_8__invokeESI_ @1997
-    _ZZNK4inet5Chunk4peekIN5flora13LoRaAppPacketEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EESA_SF_iE_8__invokeESI_SA_SF_i @1998
-    _ZZNK4inet5Chunk4peekIN5flora15LoRaPhyPreambleEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EEE_8__invokeESI_ @1999
-    _ZZNK4inet5Chunk4peekIN5flora15LoRaPhyPreambleEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EESA_SF_iE_8__invokeESI_SA_SF_i @2000
-    _ZZNK4inet5Chunk4peekINS_11FieldsChunkEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSA_5units1bEEEiENUlRKNS3_IS0_EEE_8__invokeESH_ @2001
-    _ZZNK4inet5Chunk4peekINS_11FieldsChunkEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSA_5units1bEEEiENUlRKNS3_IS0_EES9_SE_iE_8__invokeESH_S9_SE_i @2002
-    __clang_call_terminate @2003
+    _ZNSt6vectorIN5flora9knownNodeESaIS1_EE15_M_erase_at_endEPS1_ @1224
+    _ZNSt6vectorIN5flora9knownNodeESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_ @1225
+    _ZNSt6vectorIN5flora9knownNodeESaIS1_EED2Ev @1226
+    _ZNSt6vectorIPN5flora17LoRaNeighborCache10RadioEntryESaIS3_EED2Ev @1227
+    _ZNSt6vectorISt5tupleIJN4inet9L3AddressEddEESaIS3_EE17_M_realloc_insertIJRKS2_ddEEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_ @1228
+    _ZNSt7__cxx114listIPN7omnetpp8cMessageESaIS3_EE6removeERKS3_ @1229
+    _ZNSt7__cxx114listIdSaIdEE4sortEv @1230
+    _ZNSt8_Rb_treeIPKN4inet13physicallayer6IRadioESt4pairIKS4_PN5flora17LoRaNeighborCache10RadioEntryEESt10_Select1stISB_ESt4lessIS4_ESaISB_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS6_EESM_IJEEEEESt17_Rb_tree_iteratorISB_ESt23_Rb_tree_const_iteratorISB_EDpOT_ @1231
+    _ZNSt8_Rb_treeIPKN4inet13physicallayer6IRadioESt4pairIKS4_PN5flora17LoRaNeighborCache10RadioEntryEESt10_Select1stISB_ESt4lessIS4_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS6_ @1232
+    _ZNSt8_Rb_treeIPKN4inet13physicallayer6IRadioESt4pairIKS4_PN5flora17LoRaNeighborCache10RadioEntryEESt10_Select1stISB_ESt4lessIS4_ESaISB_EE8_M_eraseEPSt13_Rb_tree_nodeISB_E @1233
+    _ZNSt8_Rb_treeIdSt4pairIKddESt10_Select1stIS2_ESt4lessIdESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOdEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_ @1234
+    _ZNSt8_Rb_treeIdSt4pairIKddESt10_Select1stIS2_ESt4lessIdESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_ @1235
+    _ZNSt8_Rb_treeIdSt4pairIKddESt10_Select1stIS2_ESt4lessIdESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E @1236
+    _ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOiEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_ @1237
+    _ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_ @1238
+    _ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E @1239
+    _ZSt8_DestroyIPN5flora9knownNodeES1_EvT_S3_RSaIT0_E @1240
+    _ZTCN5flora11LoRaGWRadioE0_N4inet13physicallayer13FlatRadioBaseE @1241 DATA
+    _ZTCN5flora11LoRaGWRadioE0_N4inet13physicallayer19NarrowbandRadioBaseE @1242 DATA
+    _ZTCN5flora11LoRaGWRadioE0_N4inet13physicallayer5RadioE @1243 DATA
+    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer12ReceiverBaseE @1244 DATA
+    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer16FlatReceiverBaseE @1245 DATA
+    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer16SnirReceiverBaseE @1246 DATA
+    _ZTCN5flora12LoRaReceiverE0_N4inet13physicallayer22NarrowbandReceiverBaseE @1247 DATA
+    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer13ReceptionBaseE @1248 DATA
+    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer15ScalarReceptionE @1249 DATA
+    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer17FlatReceptionBaseE @1250 DATA
+    _ZTCN5flora13LoRaReceptionE0_N4inet13physicallayer23NarrowbandReceptionBaseE @1251 DATA
+    _ZTCN5flora13LoRaReceptionE248_N4inet13physicallayer21IReceptionAnalogModelE @1252 DATA
+    _ZTCN5flora15LoRaAnalogModelE0_N4inet13physicallayer15AnalogModelBaseE @1253 DATA
+    _ZTCN5flora15LoRaAnalogModelE0_N4inet13physicallayer21ScalarAnalogModelBaseE @1254 DATA
+    _ZTCN5flora15LoRaTransmitterE0_N4inet13physicallayer15TransmitterBaseE @1255 DATA
+    _ZTCN5flora15LoRaTransmitterE0_N4inet13physicallayer19FlatTransmitterBaseE @1256 DATA
+    _ZTCN5flora15LoRaTransmitterE0_N4inet13physicallayer25NarrowbandTransmitterBaseE @1257 DATA
+    _ZTCN5flora16LoRaTransmissionE0_N4inet13physicallayer16TransmissionBaseE @1258 DATA
+    _ZTCN5flora16LoRaTransmissionE248_N4inet13physicallayer24ITransmissionAnalogModelE @1259 DATA
+    _ZTCN5flora18LoRaEnergyConsumerE0_N4inet13physicallayer26StateBasedEpEnergyConsumerE @1260 DATA
+    _ZTCN5flora18LoRaEnergyConsumerE216_N4inet5power17IEpEnergyConsumerE @1261 DATA
+    _ZTCN5flora9LoRaRadioE0_N4inet13physicallayer19NarrowbandRadioBaseE @1262 DATA
+    _ZTCN5flora9LoRaRadioE0_N4inet13physicallayer5RadioE @1263 DATA
+    _ZTIN4inet10ILifecycleE @1264 DATA
+    _ZTIN4inet10MacAddressE @1265 DATA
+    _ZTIN4inet10NodeStatusE @1266 DATA
+    _ZTIN4inet11FieldsChunkE @1267 DATA
+    _ZTIN4inet12ErrorRateIndE @1268 DATA
+    _ZTIN4inet12IMacProtocolE @1269 DATA
+    _ZTIN4inet12InterfaceIndE @1270 DATA
+    _ZTIN4inet12IntervalTree8IntervalE @1271 DATA
+    _ZTIN4inet12MobilityBaseE @1272 DATA
+    _ZTIN4inet12StringFormat18IDirectiveResolverE @1273 DATA
+    _ZTIN4inet13ITaggedObjectE @1274 DATA
+    _ZTIN4inet13MacAddressIndE @1275 DATA
+    _ZTIN4inet13MacAddressReqE @1276 DATA
+    _ZTIN4inet13SignalTagBaseE @1277 DATA
+    _ZTIN4inet13SignalTimeIndE @1278 DATA
+    _ZTIN4inet13physicallayer10IListeningE @1279 DATA
+    _ZTIN4inet13physicallayer10IReceptionE @1280 DATA
+    _ZTIN4inet13physicallayer11IErrorModelE @1281 DATA
+    _ZTIN4inet13physicallayer11IModulationE @1282 DATA
+    _ZTIN4inet13physicallayer11RadioMediumE @1283 DATA
+    _ZTIN4inet13physicallayer11ScalarNoiseE @1284 DATA
+    _ZTIN4inet13physicallayer12IAnalogModelE @1285 DATA
+    _ZTIN4inet13physicallayer12IRadioMediumE @1286 DATA
+    _ZTIN4inet13physicallayer12ITransmitterE @1287 DATA
+    _ZTIN4inet13physicallayer12PathLossBaseE @1288 DATA
+    _ZTIN4inet13physicallayer12ReceiverBaseE @1289 DATA
+    _ZTIN4inet13physicallayer13BandListeningE @1290 DATA
+    _ZTIN4inet13physicallayer13FlatRadioBaseE @1291 DATA
+    _ZTIN4inet13physicallayer13IScalarSignalE @1292 DATA
+    _ZTIN4inet13physicallayer13ITransmissionE @1293 DATA
+    _ZTIN4inet13physicallayer13ListeningBaseE @1294 DATA
+    _ZTIN4inet13physicallayer13ReceptionBaseE @1295 DATA
+    _ZTIN4inet13physicallayer14INeighborCacheE @1296 DATA
+    _ZTIN4inet13physicallayer14WirelessSignalE @1297 DATA
+    _ZTIN4inet13physicallayer15AnalogModelBaseE @1298 DATA
+    _ZTIN4inet13physicallayer15IApskModulationE @1299 DATA
+    _ZTIN4inet13physicallayer15IWirelessSignalE @1300 DATA
+    _ZTIN4inet13physicallayer15ScalarReceptionE @1301 DATA
+    _ZTIN4inet13physicallayer15TransmitterBaseE @1302 DATA
+    _ZTIN4inet13physicallayer16FlatReceiverBaseE @1303 DATA
+    _ZTIN4inet13physicallayer16SnirReceiverBaseE @1304 DATA
+    _ZTIN4inet13physicallayer16TransmissionBaseE @1305 DATA
+    _ZTIN4inet13physicallayer17FlatReceptionBaseE @1306 DATA
+    _ZTIN4inet13physicallayer17FreeSpacePathLossE @1307 DATA
+    _ZTIN4inet13physicallayer17IMediumLimitCacheE @1308 DATA
+    _ZTIN4inet13physicallayer17INarrowbandSignalE @1309 DATA
+    _ZTIN4inet13physicallayer17PhysicalLayerBaseE @1310 DATA
+    _ZTIN4inet13physicallayer18ApskModulationBaseE @1311 DATA
+    _ZTIN4inet13physicallayer18ISignalAnalogModelE @1312 DATA
+    _ZTIN4inet13physicallayer19FlatTransmitterBaseE @1313 DATA
+    _ZTIN4inet13physicallayer19NarrowbandNoiseBaseE @1314 DATA
+    _ZTIN4inet13physicallayer19NarrowbandRadioBaseE @1315 DATA
+    _ZTIN4inet13physicallayer21ConfigureRadioCommandE @1316 DATA
+    _ZTIN4inet13physicallayer21IReceptionAnalogModelE @1317 DATA
+    _ZTIN4inet13physicallayer21ScalarAnalogModelBaseE @1318 DATA
+    _ZTIN4inet13physicallayer22NarrowbandReceiverBaseE @1319 DATA
+    _ZTIN4inet13physicallayer23NarrowbandReceptionBaseE @1320 DATA
+    _ZTIN4inet13physicallayer24ITransmissionAnalogModelE @1321 DATA
+    _ZTIN4inet13physicallayer25NarrowbandTransmitterBaseE @1322 DATA
+    _ZTIN4inet13physicallayer26StateBasedEpEnergyConsumerE @1323 DATA
+    _ZTIN4inet13physicallayer5RadioE @1324 DATA
+    _ZTIN4inet13physicallayer6INoiseE @1325 DATA
+    _ZTIN4inet13physicallayer6IRadioE @1326 DATA
+    _ZTIN4inet13physicallayer6SignalE @1327 DATA
+    _ZTIN4inet13physicallayer9IPathLossE @1328 DATA
+    _ZTIN4inet13physicallayer9IReceiverE @1329 DATA
+    _ZTIN4inet13physicallayer9NoiseBaseE @1330 DATA
+    _ZTIN4inet14IPhysicalLayerE @1331 DATA
+    _ZTIN4inet14SignalPowerIndE @1332 DATA
+    _ZTIN4inet14SignalPowerReqE @1333 DATA
+    _ZTIN4inet15IInterfaceTableE @1334 DATA
+    _ZTIN4inet15MacProtocolBaseE @1335 DATA
+    _ZTIN4inet15OperationalBaseE @1336 DATA
+    _ZTIN4inet15ProtocolTagBaseE @1337 DATA
+    _ZTIN4inet16IPrintableObjectE @1338 DATA
+    _ZTIN4inet16InterfaceTagBaseE @1339 DATA
+    _ZTIN4inet16NetworkInterfaceE @1340 DATA
+    _ZTIN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1341 DATA
+    _ZTIN4inet17MacAddressTagBaseE @1342 DATA
+    _ZTIN4inet17PacketProtocolTagE @1343 DATA
+    _ZTIN4inet18SignalPowerTagBaseE @1344 DATA
+    _ZTIN4inet18StationaryMobilityE @1345 DATA
+    _ZTIN4inet19IPhysicalLayerFrameE @1346 DATA
+    _ZTIN4inet19IRegionTaggedObjectE @1347 DATA
+    _ZTIN4inet19IntrusivePtrCounterINS_5ChunkEEE @1348 DATA
+    _ZTIN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1349 DATA
+    _ZTIN4inet19LayeredProtocolBaseE @1350 DATA
+    _ZTIN4inet22StationaryMobilityBaseE @1351 DATA
+    _ZTIN4inet5ChunkE @1352 DATA
+    _ZTIN4inet5CoordE @1353 DATA
+    _ZTIN4inet5power13IEnergySourceE @1354 DATA
+    _ZTIN4inet5power15IEnergyConsumerE @1355 DATA
+    _ZTIN4inet5power15IEpEnergySourceE @1356 DATA
+    _ZTIN4inet5power17IEpEnergyConsumerE @1357 DATA
+    _ZTIN4inet5units5valueIdNS0_5units1mEEE @1358 DATA
+    _ZTIN4inet5units5valueIdNS0_7composeINS0_5units1mENS0_3powINS3_1sELin1ELi1EEEEEEE @1359 DATA
+    _ZTIN4inet5units5valueIdNS0_7composeINS2_INS2_INS0_5units1mENS2_INS3_2kgENS0_3powINS3_1sELin2ELi1EEEEEEES4_EENS6_IS7_Lin1ELi1EEEEEEE @1360 DATA
+    _ZTIN4inet6PacketE @1361 DATA
+    _ZTIN4inet7SnirIndE @1362 DATA
+    _ZTIN4inet7TagBaseE @1363 DATA
+    _ZTIN4inet8queueing12IPacketQueueE @1364 DATA
+    _ZTIN4inet8queueing16IPacketProcessorE @1365 DATA
+    _ZTIN4inet8queueing17IActivePacketSinkE @1366 DATA
+    _ZTIN4inet8queueing17IPacketCollectionE @1367 DATA
+    _ZTIN4inet8queueing18IPassivePacketSinkE @1368 DATA
+    _ZTIN4inet8queueing19PacketProcessorBaseE @1369 DATA
+    _ZTIN4inet8queueing20IPassivePacketSourceE @1370 DATA
+    _ZTIN4inet9IMobilityE @1371 DATA
+    _ZTIN5flora10LoRaMediumE @1372 DATA
+    _ZTIN5flora11LoRaGWRadioE @1373 DATA
+    _ZTIN5flora11LoRaOptionsE @1374 DATA
+    _ZTIN5flora12LoRaMacFrameE @1375 DATA
+    _ZTIN5flora12LoRaReceiverE @1376 DATA
+    _ZTIN5flora13AppPacketTypeE @1377 DATA
+    _ZTIN5flora13LoRaAppPacketE @1378 DATA
+    _ZTIN5flora13LoRaReceptionE @1379 DATA
+    _ZTIN5flora13SimpleLoRaAppE @1380 DATA
+    _ZTIN5flora14LoRaModulationE @1381 DATA
+    _ZTIN5flora15LoRaAnalogModelE @1382 DATA
+    _ZTIN5flora15LoRaHataOkumuraE @1383 DATA
+    _ZTIN5flora15LoRaMediumCacheE @1384 DATA
+    _ZTIN5flora15LoRaPhyPreambleE @1385 DATA
+    _ZTIN5flora15LoRaTransmitterE @1386 DATA
+    _ZTIN5flora15PacketForwarderE @1387 DATA
+    _ZTIN5flora16LoRaPathLossOuluE @1388 DATA
+    _ZTIN5flora16LoRaTransmissionE @1389 DATA
+    _ZTIN5flora16NetworkServerAppE @1390 DATA
+    _ZTIN5flora17LoRaBandListeningE @1391 DATA
+    _ZTIN5flora17LoRaNeighborCacheE @1392 DATA
+    _ZTIN5flora17LoRaTagDescriptorE @1393 DATA
+    _ZTIN5flora18LoRaEnergyConsumerE @1394 DATA
+    _ZTIN5flora18LoRaMacControlInfoE @1395 DATA
+    _ZTIN5flora20LoRaRadioCommandCodeE @1396 DATA
+    _ZTIN5flora21LoRaOptionsDescriptorE @1397 DATA
+    _ZTIN5flora22LoRaLogNormalShadowingE @1398 DATA
+    _ZTIN5flora22LoRaMacFrameDescriptorE @1399 DATA
+    _ZTIN5flora23LoRaAppPacketDescriptorE @1400 DATA
+    _ZTIN5flora23LoRaReceptionIndicationE @1401 DATA
+    _ZTIN5flora23LoRaTransmissionRequestE @1402 DATA
+    _ZTIN5flora25LoRaConfigureRadioCommandE @1403 DATA
+    _ZTIN5flora25LoRaPhyPreambleDescriptorE @1404 DATA
+    _ZTIN5flora28LoRaMacControlInfoDescriptorE @1405 DATA
+    _ZTIN5flora33LoRaReceptionIndicationDescriptorE @1406 DATA
+    _ZTIN5flora33LoRaTransmissionRequestDescriptorE @1407 DATA
+    _ZTIN5flora35LoRaConfigureRadioCommandDescriptorE @1408 DATA
+    _ZTIN5flora7LoRaMacE @1409 DATA
+    _ZTIN5flora7LoRaTagE @1410 DATA
+    _ZTIN5flora9LoRaGWMacE @1411 DATA
+    _ZTIN5flora9LoRaRadioE @1412 DATA
+    _ZTIN7omnetpp10cComponentE @1413 DATA
+    _ZTIN7omnetpp10cExceptionE @1414 DATA
+    _ZTIN7omnetpp10cIListenerE @1415 DATA
+    _ZTIN7omnetpp10cSoftOwnerE @1416 DATA
+    _ZTIN7omnetpp10cWatchBaseE @1417 DATA
+    _ZTIN7omnetpp11noncopyableE @1418 DATA
+    _ZTIN7omnetpp12cNamedObjectE @1419 DATA
+    _ZTIN7omnetpp12cOwnedObjectE @1420 DATA
+    _ZTIN7omnetpp13cRuntimeErrorE @1421 DATA
+    _ZTIN7omnetpp13cSimpleModuleE @1422 DATA
+    _ZTIN7omnetpp16cClassDescriptorE @1423 DATA
+    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5CoordEEE @1424 DATA
+    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_5units1mEEEEE @1425 DATA
+    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEEEE @1426 DATA
+    _ZTIN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS4_INS4_INS2_5units1mENS4_INS5_2kgENS2_3powINS5_1sELin2ELi1EEEEEEES6_EENS8_IS9_Lin1ELi1EEEEEEEEE @1427 DATA
+    _ZTIN7omnetpp21cGenericReadonlyWatchINS_4cFSMEEE @1428 DATA
+    _ZTIN7omnetpp21cGenericReadonlyWatchINS_7SimTimeEEE @1429 DATA
+    _ZTIN7omnetpp23cGenericAssignableWatchIdEE @1430 DATA
+    _ZTIN7omnetpp23cGenericAssignableWatchIiEE @1431 DATA
+    _ZTIN7omnetpp23cGenericAssignableWatchIlEE @1432 DATA
+    _ZTIN7omnetpp23cNoncopyableOwnedObjectE @1433 DATA
+    _ZTIN7omnetpp4cFSME @1434 DATA
+    _ZTIN7omnetpp6cEventE @1435 DATA
+    _ZTIN7omnetpp7SimTimeE @1436 DATA
+    _ZTIN7omnetpp7cModuleE @1437 DATA
+    _ZTIN7omnetpp7cObjectE @1438 DATA
+    _ZTIN7omnetpp7cPacketE @1439 DATA
+    _ZTIN7omnetpp8cMessageE @1440 DATA
+    _ZTIN7omnetpp9cListenerE @1441 DATA
+    _ZTIPKN4inet13physicallayer11ScalarNoiseE @1442 DATA
+    _ZTIPKN4inet13physicallayer13IScalarSignalE @1443 DATA
+    _ZTIPKN4inet13physicallayer17INarrowbandSignalE @1444 DATA
+    _ZTIPKN5flora13LoRaReceptionE @1445 DATA
+    _ZTIPKN5flora16LoRaTransmissionE @1446 DATA
+    _ZTIPKN5flora17LoRaBandListeningE @1447 DATA
+    _ZTIPKN7omnetpp7cModuleE @1448 DATA
+    _ZTIPKN7omnetpp7cObjectE @1449 DATA
+    _ZTIPN4inet10MacAddressE @1450 DATA
+    _ZTIPN4inet13physicallayer11RadioMediumE @1451 DATA
+    _ZTIPN4inet13physicallayer14WirelessSignalE @1452 DATA
+    _ZTIPN4inet13physicallayer21ConfigureRadioCommandE @1453 DATA
+    _ZTIPN4inet13physicallayer6IRadioE @1454 DATA
+    _ZTIPN4inet15IInterfaceTableE @1455 DATA
+    _ZTIPN4inet18StationaryMobilityE @1456 DATA
+    _ZTIPN4inet6PacketE @1457 DATA
+    _ZTIPN5flora10LoRaMediumE @1458 DATA
+    _ZTIPN5flora11LoRaOptionsE @1459 DATA
+    _ZTIPN5flora12LoRaMacFrameE @1460 DATA
+    _ZTIPN5flora13LoRaAppPacketE @1461 DATA
+    _ZTIPN5flora15LoRaPhyPreambleE @1462 DATA
+    _ZTIPN5flora18LoRaMacControlInfoE @1463 DATA
+    _ZTIPN5flora22LoRaLogNormalShadowingE @1464 DATA
+    _ZTIPN5flora23LoRaReceptionIndicationE @1465 DATA
+    _ZTIPN5flora23LoRaTransmissionRequestE @1466 DATA
+    _ZTIPN5flora25LoRaConfigureRadioCommandE @1467 DATA
+    _ZTIPN5flora7LoRaMacE @1468 DATA
+    _ZTIPN5flora7LoRaTagE @1469 DATA
+    _ZTIPN5flora9LoRaGWMacE @1470 DATA
+    _ZTIPN5flora9LoRaRadioE @1471 DATA
+    _ZTIPN7omnetpp7cObjectE @1472 DATA
+    _ZTSN4inet10ILifecycleE @1473 DATA
+    _ZTSN4inet10MacAddressE @1474 DATA
+    _ZTSN4inet10NodeStatusE @1475 DATA
+    _ZTSN4inet11FieldsChunkE @1476 DATA
+    _ZTSN4inet12ErrorRateIndE @1477 DATA
+    _ZTSN4inet12IMacProtocolE @1478 DATA
+    _ZTSN4inet12InterfaceIndE @1479 DATA
+    _ZTSN4inet12IntervalTree8IntervalE @1480 DATA
+    _ZTSN4inet12MobilityBaseE @1481 DATA
+    _ZTSN4inet12StringFormat18IDirectiveResolverE @1482 DATA
+    _ZTSN4inet13ITaggedObjectE @1483 DATA
+    _ZTSN4inet13MacAddressIndE @1484 DATA
+    _ZTSN4inet13MacAddressReqE @1485 DATA
+    _ZTSN4inet13SignalTagBaseE @1486 DATA
+    _ZTSN4inet13SignalTimeIndE @1487 DATA
+    _ZTSN4inet13physicallayer10IListeningE @1488 DATA
+    _ZTSN4inet13physicallayer10IReceptionE @1489 DATA
+    _ZTSN4inet13physicallayer11IErrorModelE @1490 DATA
+    _ZTSN4inet13physicallayer11IModulationE @1491 DATA
+    _ZTSN4inet13physicallayer11RadioMediumE @1492 DATA
+    _ZTSN4inet13physicallayer11ScalarNoiseE @1493 DATA
+    _ZTSN4inet13physicallayer12IAnalogModelE @1494 DATA
+    _ZTSN4inet13physicallayer12IRadioMediumE @1495 DATA
+    _ZTSN4inet13physicallayer12ITransmitterE @1496 DATA
+    _ZTSN4inet13physicallayer12PathLossBaseE @1497 DATA
+    _ZTSN4inet13physicallayer12ReceiverBaseE @1498 DATA
+    _ZTSN4inet13physicallayer13BandListeningE @1499 DATA
+    _ZTSN4inet13physicallayer13FlatRadioBaseE @1500 DATA
+    _ZTSN4inet13physicallayer13IScalarSignalE @1501 DATA
+    _ZTSN4inet13physicallayer13ITransmissionE @1502 DATA
+    _ZTSN4inet13physicallayer13ListeningBaseE @1503 DATA
+    _ZTSN4inet13physicallayer13ReceptionBaseE @1504 DATA
+    _ZTSN4inet13physicallayer14INeighborCacheE @1505 DATA
+    _ZTSN4inet13physicallayer14WirelessSignalE @1506 DATA
+    _ZTSN4inet13physicallayer15AnalogModelBaseE @1507 DATA
+    _ZTSN4inet13physicallayer15IApskModulationE @1508 DATA
+    _ZTSN4inet13physicallayer15IWirelessSignalE @1509 DATA
+    _ZTSN4inet13physicallayer15ScalarReceptionE @1510 DATA
+    _ZTSN4inet13physicallayer15TransmitterBaseE @1511 DATA
+    _ZTSN4inet13physicallayer16FlatReceiverBaseE @1512 DATA
+    _ZTSN4inet13physicallayer16SnirReceiverBaseE @1513 DATA
+    _ZTSN4inet13physicallayer16TransmissionBaseE @1514 DATA
+    _ZTSN4inet13physicallayer17FlatReceptionBaseE @1515 DATA
+    _ZTSN4inet13physicallayer17FreeSpacePathLossE @1516 DATA
+    _ZTSN4inet13physicallayer17IMediumLimitCacheE @1517 DATA
+    _ZTSN4inet13physicallayer17INarrowbandSignalE @1518 DATA
+    _ZTSN4inet13physicallayer17PhysicalLayerBaseE @1519 DATA
+    _ZTSN4inet13physicallayer18ApskModulationBaseE @1520 DATA
+    _ZTSN4inet13physicallayer18ISignalAnalogModelE @1521 DATA
+    _ZTSN4inet13physicallayer19FlatTransmitterBaseE @1522 DATA
+    _ZTSN4inet13physicallayer19NarrowbandNoiseBaseE @1523 DATA
+    _ZTSN4inet13physicallayer19NarrowbandRadioBaseE @1524 DATA
+    _ZTSN4inet13physicallayer21ConfigureRadioCommandE @1525 DATA
+    _ZTSN4inet13physicallayer21IReceptionAnalogModelE @1526 DATA
+    _ZTSN4inet13physicallayer21ScalarAnalogModelBaseE @1527 DATA
+    _ZTSN4inet13physicallayer22NarrowbandReceiverBaseE @1528 DATA
+    _ZTSN4inet13physicallayer23NarrowbandReceptionBaseE @1529 DATA
+    _ZTSN4inet13physicallayer24ITransmissionAnalogModelE @1530 DATA
+    _ZTSN4inet13physicallayer25NarrowbandTransmitterBaseE @1531 DATA
+    _ZTSN4inet13physicallayer26StateBasedEpEnergyConsumerE @1532 DATA
+    _ZTSN4inet13physicallayer5RadioE @1533 DATA
+    _ZTSN4inet13physicallayer6INoiseE @1534 DATA
+    _ZTSN4inet13physicallayer6IRadioE @1535 DATA
+    _ZTSN4inet13physicallayer6SignalE @1536 DATA
+    _ZTSN4inet13physicallayer9IPathLossE @1537 DATA
+    _ZTSN4inet13physicallayer9IReceiverE @1538 DATA
+    _ZTSN4inet13physicallayer9NoiseBaseE @1539 DATA
+    _ZTSN4inet14IPhysicalLayerE @1540 DATA
+    _ZTSN4inet14SignalPowerIndE @1541 DATA
+    _ZTSN4inet14SignalPowerReqE @1542 DATA
+    _ZTSN4inet15IInterfaceTableE @1543 DATA
+    _ZTSN4inet15MacProtocolBaseE @1544 DATA
+    _ZTSN4inet15OperationalBaseE @1545 DATA
+    _ZTSN4inet15ProtocolTagBaseE @1546 DATA
+    _ZTSN4inet16IPrintableObjectE @1547 DATA
+    _ZTSN4inet16InterfaceTagBaseE @1548 DATA
+    _ZTSN4inet16NetworkInterfaceE @1549 DATA
+    _ZTSN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1550 DATA
+    _ZTSN4inet17MacAddressTagBaseE @1551 DATA
+    _ZTSN4inet17PacketProtocolTagE @1552 DATA
+    _ZTSN4inet18SignalPowerTagBaseE @1553 DATA
+    _ZTSN4inet18StationaryMobilityE @1554 DATA
+    _ZTSN4inet19IPhysicalLayerFrameE @1555 DATA
+    _ZTSN4inet19IRegionTaggedObjectE @1556 DATA
+    _ZTSN4inet19IntrusivePtrCounterINS_5ChunkEEE @1557 DATA
+    _ZTSN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1558 DATA
+    _ZTSN4inet19LayeredProtocolBaseE @1559 DATA
+    _ZTSN4inet22StationaryMobilityBaseE @1560 DATA
+    _ZTSN4inet5ChunkE @1561 DATA
+    _ZTSN4inet5CoordE @1562 DATA
+    _ZTSN4inet5power13IEnergySourceE @1563 DATA
+    _ZTSN4inet5power15IEnergyConsumerE @1564 DATA
+    _ZTSN4inet5power15IEpEnergySourceE @1565 DATA
+    _ZTSN4inet5power17IEpEnergyConsumerE @1566 DATA
+    _ZTSN4inet5units5valueIdNS0_5units1mEEE @1567 DATA
+    _ZTSN4inet5units5valueIdNS0_7composeINS0_5units1mENS0_3powINS3_1sELin1ELi1EEEEEEE @1568 DATA
+    _ZTSN4inet5units5valueIdNS0_7composeINS2_INS2_INS0_5units1mENS2_INS3_2kgENS0_3powINS3_1sELin2ELi1EEEEEEES4_EENS6_IS7_Lin1ELi1EEEEEEE @1569 DATA
+    _ZTSN4inet6PacketE @1570 DATA
+    _ZTSN4inet7SnirIndE @1571 DATA
+    _ZTSN4inet7TagBaseE @1572 DATA
+    _ZTSN4inet8queueing12IPacketQueueE @1573 DATA
+    _ZTSN4inet8queueing16IPacketProcessorE @1574 DATA
+    _ZTSN4inet8queueing17IActivePacketSinkE @1575 DATA
+    _ZTSN4inet8queueing17IPacketCollectionE @1576 DATA
+    _ZTSN4inet8queueing18IPassivePacketSinkE @1577 DATA
+    _ZTSN4inet8queueing19PacketProcessorBaseE @1578 DATA
+    _ZTSN4inet8queueing20IPassivePacketSourceE @1579 DATA
+    _ZTSN4inet9IMobilityE @1580 DATA
+    _ZTSN5flora10LoRaMediumE @1581 DATA
+    _ZTSN5flora11LoRaGWRadioE @1582 DATA
+    _ZTSN5flora11LoRaOptionsE @1583 DATA
+    _ZTSN5flora12LoRaMacFrameE @1584 DATA
+    _ZTSN5flora12LoRaReceiverE @1585 DATA
+    _ZTSN5flora13AppPacketTypeE @1586 DATA
+    _ZTSN5flora13LoRaAppPacketE @1587 DATA
+    _ZTSN5flora13LoRaReceptionE @1588 DATA
+    _ZTSN5flora13SimpleLoRaAppE @1589 DATA
+    _ZTSN5flora14LoRaModulationE @1590 DATA
+    _ZTSN5flora15LoRaAnalogModelE @1591 DATA
+    _ZTSN5flora15LoRaHataOkumuraE @1592 DATA
+    _ZTSN5flora15LoRaMediumCacheE @1593 DATA
+    _ZTSN5flora15LoRaPhyPreambleE @1594 DATA
+    _ZTSN5flora15LoRaTransmitterE @1595 DATA
+    _ZTSN5flora15PacketForwarderE @1596 DATA
+    _ZTSN5flora16LoRaPathLossOuluE @1597 DATA
+    _ZTSN5flora16LoRaTransmissionE @1598 DATA
+    _ZTSN5flora16NetworkServerAppE @1599 DATA
+    _ZTSN5flora17LoRaBandListeningE @1600 DATA
+    _ZTSN5flora17LoRaNeighborCacheE @1601 DATA
+    _ZTSN5flora17LoRaTagDescriptorE @1602 DATA
+    _ZTSN5flora18LoRaEnergyConsumerE @1603 DATA
+    _ZTSN5flora18LoRaMacControlInfoE @1604 DATA
+    _ZTSN5flora20LoRaRadioCommandCodeE @1605 DATA
+    _ZTSN5flora21LoRaOptionsDescriptorE @1606 DATA
+    _ZTSN5flora22LoRaLogNormalShadowingE @1607 DATA
+    _ZTSN5flora22LoRaMacFrameDescriptorE @1608 DATA
+    _ZTSN5flora23LoRaAppPacketDescriptorE @1609 DATA
+    _ZTSN5flora23LoRaReceptionIndicationE @1610 DATA
+    _ZTSN5flora23LoRaTransmissionRequestE @1611 DATA
+    _ZTSN5flora25LoRaConfigureRadioCommandE @1612 DATA
+    _ZTSN5flora25LoRaPhyPreambleDescriptorE @1613 DATA
+    _ZTSN5flora28LoRaMacControlInfoDescriptorE @1614 DATA
+    _ZTSN5flora33LoRaReceptionIndicationDescriptorE @1615 DATA
+    _ZTSN5flora33LoRaTransmissionRequestDescriptorE @1616 DATA
+    _ZTSN5flora35LoRaConfigureRadioCommandDescriptorE @1617 DATA
+    _ZTSN5flora7LoRaMacE @1618 DATA
+    _ZTSN5flora7LoRaTagE @1619 DATA
+    _ZTSN5flora9LoRaGWMacE @1620 DATA
+    _ZTSN5flora9LoRaRadioE @1621 DATA
+    _ZTSN7omnetpp10cComponentE @1622 DATA
+    _ZTSN7omnetpp10cExceptionE @1623 DATA
+    _ZTSN7omnetpp10cIListenerE @1624 DATA
+    _ZTSN7omnetpp10cSoftOwnerE @1625 DATA
+    _ZTSN7omnetpp10cWatchBaseE @1626 DATA
+    _ZTSN7omnetpp11noncopyableE @1627 DATA
+    _ZTSN7omnetpp12cNamedObjectE @1628 DATA
+    _ZTSN7omnetpp12cOwnedObjectE @1629 DATA
+    _ZTSN7omnetpp13cRuntimeErrorE @1630 DATA
+    _ZTSN7omnetpp13cSimpleModuleE @1631 DATA
+    _ZTSN7omnetpp16cClassDescriptorE @1632 DATA
+    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5CoordEEE @1633 DATA
+    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_5units1mEEEEE @1634 DATA
+    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEEEE @1635 DATA
+    _ZTSN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS4_INS4_INS2_5units1mENS4_INS5_2kgENS2_3powINS5_1sELin2ELi1EEEEEEES6_EENS8_IS9_Lin1ELi1EEEEEEEEE @1636 DATA
+    _ZTSN7omnetpp21cGenericReadonlyWatchINS_4cFSMEEE @1637 DATA
+    _ZTSN7omnetpp21cGenericReadonlyWatchINS_7SimTimeEEE @1638 DATA
+    _ZTSN7omnetpp23cGenericAssignableWatchIdEE @1639 DATA
+    _ZTSN7omnetpp23cGenericAssignableWatchIiEE @1640 DATA
+    _ZTSN7omnetpp23cGenericAssignableWatchIlEE @1641 DATA
+    _ZTSN7omnetpp23cNoncopyableOwnedObjectE @1642 DATA
+    _ZTSN7omnetpp4cFSME @1643 DATA
+    _ZTSN7omnetpp6cEventE @1644 DATA
+    _ZTSN7omnetpp7SimTimeE @1645 DATA
+    _ZTSN7omnetpp7cModuleE @1646 DATA
+    _ZTSN7omnetpp7cObjectE @1647 DATA
+    _ZTSN7omnetpp7cPacketE @1648 DATA
+    _ZTSN7omnetpp8cMessageE @1649 DATA
+    _ZTSN7omnetpp9cListenerE @1650 DATA
+    _ZTSPKN4inet13physicallayer11ScalarNoiseE @1651 DATA
+    _ZTSPKN4inet13physicallayer13IScalarSignalE @1652 DATA
+    _ZTSPKN4inet13physicallayer17INarrowbandSignalE @1653 DATA
+    _ZTSPKN5flora13LoRaReceptionE @1654 DATA
+    _ZTSPKN5flora16LoRaTransmissionE @1655 DATA
+    _ZTSPKN5flora17LoRaBandListeningE @1656 DATA
+    _ZTSPKN7omnetpp7cModuleE @1657 DATA
+    _ZTSPKN7omnetpp7cObjectE @1658 DATA
+    _ZTSPN4inet10MacAddressE @1659 DATA
+    _ZTSPN4inet13physicallayer11RadioMediumE @1660 DATA
+    _ZTSPN4inet13physicallayer14WirelessSignalE @1661 DATA
+    _ZTSPN4inet13physicallayer21ConfigureRadioCommandE @1662 DATA
+    _ZTSPN4inet13physicallayer6IRadioE @1663 DATA
+    _ZTSPN4inet15IInterfaceTableE @1664 DATA
+    _ZTSPN4inet18StationaryMobilityE @1665 DATA
+    _ZTSPN4inet6PacketE @1666 DATA
+    _ZTSPN5flora10LoRaMediumE @1667 DATA
+    _ZTSPN5flora11LoRaOptionsE @1668 DATA
+    _ZTSPN5flora12LoRaMacFrameE @1669 DATA
+    _ZTSPN5flora13LoRaAppPacketE @1670 DATA
+    _ZTSPN5flora15LoRaPhyPreambleE @1671 DATA
+    _ZTSPN5flora18LoRaMacControlInfoE @1672 DATA
+    _ZTSPN5flora22LoRaLogNormalShadowingE @1673 DATA
+    _ZTSPN5flora23LoRaReceptionIndicationE @1674 DATA
+    _ZTSPN5flora23LoRaTransmissionRequestE @1675 DATA
+    _ZTSPN5flora25LoRaConfigureRadioCommandE @1676 DATA
+    _ZTSPN5flora7LoRaMacE @1677 DATA
+    _ZTSPN5flora7LoRaTagE @1678 DATA
+    _ZTSPN5flora9LoRaGWMacE @1679 DATA
+    _ZTSPN5flora9LoRaRadioE @1680 DATA
+    _ZTSPN7omnetpp7cObjectE @1681 DATA
+    _ZTTN5flora11LoRaGWRadioE @1682 DATA
+    _ZTTN5flora12LoRaReceiverE @1683 DATA
+    _ZTTN5flora13LoRaReceptionE @1684 DATA
+    _ZTTN5flora15LoRaAnalogModelE @1685 DATA
+    _ZTTN5flora15LoRaTransmitterE @1686 DATA
+    _ZTTN5flora16LoRaTransmissionE @1687 DATA
+    _ZTTN5flora18LoRaEnergyConsumerE @1688 DATA
+    _ZTTN5flora9LoRaRadioE @1689 DATA
+    _ZTVN4inet12IntervalTree8IntervalE @1690 DATA
+    _ZTVN5flora10LoRaMediumE @1691 DATA
+    _ZTVN5flora11LoRaGWRadioE @1692 DATA
+    _ZTVN5flora11LoRaOptionsE @1693 DATA
+    _ZTVN5flora12LoRaMacFrameE @1694 DATA
+    _ZTVN5flora12LoRaReceiverE @1695 DATA
+    _ZTVN5flora13LoRaAppPacketE @1696 DATA
+    _ZTVN5flora13LoRaReceptionE @1697 DATA
+    _ZTVN5flora13SimpleLoRaAppE @1698 DATA
+    _ZTVN5flora14LoRaModulationE @1699 DATA
+    _ZTVN5flora15LoRaAnalogModelE @1700 DATA
+    _ZTVN5flora15LoRaHataOkumuraE @1701 DATA
+    _ZTVN5flora15LoRaMediumCacheE @1702 DATA
+    _ZTVN5flora15LoRaPhyPreambleE @1703 DATA
+    _ZTVN5flora15LoRaTransmitterE @1704 DATA
+    _ZTVN5flora15PacketForwarderE @1705 DATA
+    _ZTVN5flora16LoRaPathLossOuluE @1706 DATA
+    _ZTVN5flora16LoRaTransmissionE @1707 DATA
+    _ZTVN5flora16NetworkServerAppE @1708 DATA
+    _ZTVN5flora17LoRaBandListeningE @1709 DATA
+    _ZTVN5flora17LoRaNeighborCacheE @1710 DATA
+    _ZTVN5flora17LoRaTagDescriptorE @1711 DATA
+    _ZTVN5flora18LoRaEnergyConsumerE @1712 DATA
+    _ZTVN5flora18LoRaMacControlInfoE @1713 DATA
+    _ZTVN5flora21LoRaOptionsDescriptorE @1714 DATA
+    _ZTVN5flora22LoRaLogNormalShadowingE @1715 DATA
+    _ZTVN5flora22LoRaMacFrameDescriptorE @1716 DATA
+    _ZTVN5flora23LoRaAppPacketDescriptorE @1717 DATA
+    _ZTVN5flora23LoRaReceptionIndicationE @1718 DATA
+    _ZTVN5flora23LoRaTransmissionRequestE @1719 DATA
+    _ZTVN5flora25LoRaConfigureRadioCommandE @1720 DATA
+    _ZTVN5flora25LoRaPhyPreambleDescriptorE @1721 DATA
+    _ZTVN5flora28LoRaMacControlInfoDescriptorE @1722 DATA
+    _ZTVN5flora33LoRaReceptionIndicationDescriptorE @1723 DATA
+    _ZTVN5flora33LoRaTransmissionRequestDescriptorE @1724 DATA
+    _ZTVN5flora35LoRaConfigureRadioCommandDescriptorE @1725 DATA
+    _ZTVN5flora7LoRaMacE @1726 DATA
+    _ZTVN5flora7LoRaTagE @1727 DATA
+    _ZTVN5flora9LoRaGWMacE @1728 DATA
+    _ZTVN5flora9LoRaRadioE @1729 DATA
+    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5CoordEEE @1730 DATA
+    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_5units1mEEEEE @1731 DATA
+    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEEEE @1732 DATA
+    _ZTVN7omnetpp21cGenericReadonlyWatchIN4inet5units5valueIdNS2_7composeINS4_INS4_INS2_5units1mENS4_INS5_2kgENS2_3powINS5_1sELin2ELi1EEEEEEES6_EENS8_IS9_Lin1ELi1EEEEEEEEE @1733 DATA
+    _ZTVN7omnetpp21cGenericReadonlyWatchINS_4cFSMEEE @1734 DATA
+    _ZTVN7omnetpp21cGenericReadonlyWatchINS_7SimTimeEEE @1735 DATA
+    _ZTVN7omnetpp23cGenericAssignableWatchIdEE @1736 DATA
+    _ZTVN7omnetpp23cGenericAssignableWatchIiEE @1737 DATA
+    _ZTVN7omnetpp23cGenericAssignableWatchIlEE @1738 DATA
+    _ZThn16_N5flora12LoRaMacFrameD0Ev @1739
+    _ZThn16_N5flora12LoRaMacFrameD1Ev @1740
+    _ZThn16_N5flora13LoRaAppPacketD0Ev @1741
+    _ZThn16_N5flora13LoRaAppPacketD1Ev @1742
+    _ZThn16_N5flora15LoRaPhyPreambleD0Ev @1743
+    _ZThn16_N5flora15LoRaPhyPreambleD1Ev @1744
+    _ZThn16_N5flora7LoRaTagD0Ev @1745
+    _ZThn16_N5flora7LoRaTagD1Ev @1746
+    _ZThn200_N5flora15LoRaHataOkumuraD0Ev @1747
+    _ZThn200_N5flora15LoRaHataOkumuraD1Ev @1748
+    _ZThn200_N5flora15LoRaMediumCache11removeRadioEPKN4inet13physicallayer6IRadioE @1749
+    _ZThn200_N5flora15LoRaMediumCache8addRadioEPKN4inet13physicallayer6IRadioE @1750
+    _ZThn200_N5flora15LoRaMediumCacheD0Ev @1751
+    _ZThn200_N5flora15LoRaMediumCacheD1Ev @1752
+    _ZThn200_N5flora16LoRaPathLossOuluD0Ev @1753
+    _ZThn200_N5flora16LoRaPathLossOuluD1Ev @1754
+    _ZThn200_N5flora22LoRaLogNormalShadowingD0Ev @1755
+    _ZThn200_N5flora22LoRaLogNormalShadowingD1Ev @1756
+    _ZThn200_NK5flora15LoRaHataOkumura13printToStreamERSoii @1757
+    _ZThn200_NK5flora15LoRaHataOkumura15computePathLossEN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEENS3_IdS9_EENS3_IdS6_EE @1758
+    _ZThn200_NK5flora15LoRaMediumCache11getMaxSpeedEv @1759
+    _ZThn200_NK5flora15LoRaMediumCache13printToStreamERSoii @1760
+    _ZThn200_NK5flora15LoRaMediumCache17getMaxAntennaGainEv @1761
+    _ZThn200_NK5flora15LoRaMediumCache20getMaxConstraintAreaEv @1762
+    _ZThn200_NK5flora15LoRaMediumCache20getMinConstraintAreaEv @1763
+    _ZThn200_NK5flora15LoRaMediumCache20getMinReceptionPowerEv @1764
+    _ZThn200_NK5flora15LoRaMediumCache22getMinInterferenceTimeEv @1765
+    _ZThn200_NK5flora15LoRaMediumCache23getMaxInterferenceRangeEPKN4inet13physicallayer6IRadioE @1766
+    _ZThn200_NK5flora15LoRaMediumCache23getMaxInterferenceRangeEv @1767
+    _ZThn200_NK5flora15LoRaMediumCache23getMaxTransmissionPowerEv @1768
+    _ZThn200_NK5flora15LoRaMediumCache23getMinInterferencePowerEv @1769
+    _ZThn200_NK5flora15LoRaMediumCache24getMaxCommunicationRangeEPKN4inet13physicallayer6IRadioE @1770
+    _ZThn200_NK5flora15LoRaMediumCache24getMaxCommunicationRangeEv @1771
+    _ZThn200_NK5flora15LoRaMediumCache26getMaxTransmissionDurationEv @1772
+    _ZThn200_NK5flora16LoRaPathLossOulu15computePathLossEN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEENS3_IdS9_EENS3_IdS6_EE @1773
+    _ZThn200_NK5flora22LoRaLogNormalShadowing13printToStreamERSoii @1774
+    _ZThn200_NK5flora22LoRaLogNormalShadowing15computePathLossEN4inet5units5valueIdNS2_7composeINS2_5units1mENS2_3powINS5_1sELin1ELi1EEEEEEENS3_IdS9_EENS3_IdS6_EE @1775
+    _ZThn216_N4inet13physicallayer26StateBasedEpEnergyConsumerD0Ev @1776
+    _ZThn216_N4inet13physicallayer26StateBasedEpEnergyConsumerD1Ev @1777
+    _ZThn216_N5flora10LoRaMediumD0Ev @1778
+    _ZThn216_N5flora10LoRaMediumD1Ev @1779
+    _ZThn216_N5flora11LoRaGWRadioD0Ev @1780
+    _ZThn216_N5flora11LoRaGWRadioD1Ev @1781
+    _ZThn216_N5flora13SimpleLoRaApp20handleOperationStageEPN4inet18LifecycleOperationEPNS1_13IDoneCallbackE @1782
+    _ZThn216_N5flora13SimpleLoRaAppD0Ev @1783
+    _ZThn216_N5flora13SimpleLoRaAppD1Ev @1784
+    _ZThn216_N5flora15PacketForwarder13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1785
+    _ZThn216_N5flora15PacketForwarderD0Ev @1786
+    _ZThn216_N5flora15PacketForwarderD1Ev @1787
+    _ZThn216_N5flora16NetworkServerApp13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1788
+    _ZThn216_N5flora16NetworkServerAppD0Ev @1789
+    _ZThn216_N5flora16NetworkServerAppD1Ev @1790
+    _ZThn216_N5flora17LoRaNeighborCache11removeRadioEPKN4inet13physicallayer6IRadioE @1791
+    _ZThn216_N5flora17LoRaNeighborCache8addRadioEPKN4inet13physicallayer6IRadioE @1792
+    _ZThn216_N5flora17LoRaNeighborCacheD0Ev @1793
+    _ZThn216_N5flora17LoRaNeighborCacheD1Ev @1794
+    _ZThn216_N5flora18LoRaEnergyConsumerD0Ev @1795
+    _ZThn216_N5flora18LoRaEnergyConsumerD1Ev @1796
+    _ZThn216_N5flora7LoRaMacD0Ev @1797
+    _ZThn216_N5flora7LoRaMacD1Ev @1798
+    _ZThn216_N5flora9LoRaGWMacD0Ev @1799
+    _ZThn216_N5flora9LoRaGWMacD1Ev @1800
+    _ZThn216_N5flora9LoRaRadioD0Ev @1801
+    _ZThn216_N5flora9LoRaRadioD1Ev @1802
+    _ZThn216_NK4inet13physicallayer26StateBasedEpEnergyConsumer19getPowerConsumptionEv @1803
+    _ZThn216_NK5flora17LoRaNeighborCache13printToStreamERSoii @1804
+    _ZThn216_NK5flora17LoRaNeighborCache15sendToNeighborsEPN4inet13physicallayer6IRadioEPKNS2_15IWirelessSignalEd @1805
+    _ZThn216_NK5flora18LoRaEnergyConsumer19getPowerConsumptionEv @1806
+    _ZThn224_N5flora18LoRaEnergyConsumer13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1807
+    _ZThn224_N5flora18LoRaEnergyConsumerD0Ev @1808
+    _ZThn224_N5flora18LoRaEnergyConsumerD1Ev @1809
+    _ZThn248_N5flora10LoRaMediumD0Ev @1810
+    _ZThn248_N5flora10LoRaMediumD1Ev @1811
+    _ZThn248_NK4inet13physicallayer11RadioMedium11getMaterialEv @1812
+    _ZThn248_NK4inet13physicallayer11RadioMedium11getPathLossEv @1813
+    _ZThn248_NK4inet13physicallayer11RadioMedium14getAnalogModelEv @1814
+    _ZThn248_NK4inet13physicallayer11RadioMedium14getPropagationEv @1815
+    _ZThn248_NK4inet13physicallayer11RadioMedium15getObstacleLossEv @1816
+    _ZThn248_NK4inet13physicallayer11RadioMedium16getNeighborCacheEv @1817
+    _ZThn248_NK4inet13physicallayer11RadioMedium18getBackgroundNoiseEv @1818
+    _ZThn248_NK4inet13physicallayer11RadioMedium19getMediumLimitCacheEv @1819
+    _ZThn248_NK4inet13physicallayer11RadioMedium21getCommunicationCacheEv @1820
+    _ZThn248_NK4inet13physicallayer11RadioMedium22getPhysicalEnvironmentEv @1821
+    _ZThn248_NK5flora10LoRaMedium18getReceptionResultEPKN4inet13physicallayer6IRadioEPKNS2_10IListeningEPKNS2_13ITransmissionE @1822
+    _ZThn24_N4inet5Chunk13getRegionTagsEv @1823
+    _ZThn280_N5flora11LoRaGWRadioD0Ev @1824
+    _ZThn280_N5flora11LoRaGWRadioD1Ev @1825
+    _ZThn280_N5flora7LoRaMac13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1826
+    _ZThn280_N5flora7LoRaMacD0Ev @1827
+    _ZThn280_N5flora7LoRaMacD1Ev @1828
+    _ZThn280_N5flora9LoRaGWMac13receiveSignalEPN7omnetpp10cComponentEixPNS1_7cObjectE @1829
+    _ZThn280_N5flora9LoRaGWMacD0Ev @1830
+    _ZThn280_N5flora9LoRaGWMacD1Ev @1831
+    _ZThn280_N5flora9LoRaRadioD0Ev @1832
+    _ZThn280_N5flora9LoRaRadioD1Ev @1833
+    _ZThn360_N5flora7LoRaMacD0Ev @1834
+    _ZThn360_N5flora7LoRaMacD1Ev @1835
+    _ZThn368_N5flora7LoRaMac11getProviderEPN7omnetpp5cGateE @1836
+    _ZThn368_N5flora7LoRaMac25handlePullPacketProcessedEPN4inet6PacketEPN7omnetpp5cGateEb @1837
+    _ZThn368_N5flora7LoRaMac26handleCanPullPacketChangedEPN7omnetpp5cGateE @1838
+    _ZThn368_N5flora7LoRaMacD0Ev @1839
+    _ZThn368_N5flora7LoRaMacD1Ev @1840
+    _ZTv0_n104_NK4inet13physicallayer12ReceiverBase20getMinReceptionPowerEv @1841
+    _ZTv0_n104_NK4inet13physicallayer13ReceptionBase15getTransmissionEv @1842
+    _ZTv0_n104_NK4inet13physicallayer15TransmitterBase24getMaxCommunicationRangeEv @1843
+    _ZTv0_n104_NK4inet13physicallayer16FlatReceiverBase20getMinReceptionPowerEv @1844
+    _ZTv0_n104_NK4inet13physicallayer5Radio9getMediumEv @1845
+    _ZTv0_n104_NK5flora12LoRaReceiver20getMinReceptionPowerEv @1846
+    _ZTv0_n104_NK5flora15LoRaAnalogModel12computeNoiseEPKN4inet13physicallayer10IListeningEPKNS2_13IInterferenceE @1847
+    _ZTv0_n104_NK5flora9LoRaRadio9getMediumEv @1848
+    _ZTv0_n112_NK4inet13physicallayer13ReceptionBase12getStartTimeEv @1849
+    _ZTv0_n112_NK4inet13physicallayer15TransmitterBase23getMaxInterferenceRangeEv @1850
+    _ZTv0_n112_NK4inet13physicallayer16TransmissionBase16getTransmitterIdEv @1851
+    _ZTv0_n112_NK5flora12LoRaReceiver15createListeningEPKN4inet13physicallayer6IRadioEN7omnetpp7SimTimeES7_RKNS1_5CoordESA_ @1852
+    _ZTv0_n112_NK5flora9LoRaRadio25getTransmissionInProgressEv @1853
+    _ZTv0_n120_NK4inet13physicallayer13ReceptionBase10getEndTimeEv @1854
+    _ZTv0_n120_NK4inet13physicallayer16TransmissionBase25getTransmitterAntennaGainEv @1855
+    _ZTv0_n120_NK5flora12LoRaReceiver24computeListeningDecisionEPKN4inet13physicallayer10IListeningEPKNS2_13IInterferenceE @1856
+    _ZTv0_n120_NK5flora15LoRaAnalogModel11computeSNIREPKN4inet13physicallayer10IReceptionEPKNS2_6INoiseE @1857
+    _ZTv0_n120_NK5flora15LoRaTransmitter18createTransmissionEPKN4inet13physicallayer6IRadioEPKNS1_6PacketEN7omnetpp7SimTimeE @1858
+    _ZTv0_n120_NK5flora9LoRaRadio22getReceptionInProgressEv @1859
+    _ZTv0_n128_NK4inet13physicallayer16TransmissionBase9getMediumEv @1860
+    _ZTv0_n128_NK5flora12LoRaReceiver26computeIsReceptionPossibleEPKN4inet13physicallayer10IListeningEPKNS2_13ITransmissionE @1861
+    _ZTv0_n128_NK5flora9LoRaRadio24getTransmittedSignalPartEv @1862
+    _ZTv0_n136_NK4inet13physicallayer16TransmissionBase9getPacketEv @1863
+    _ZTv0_n136_NK5flora12LoRaReceiver26computeIsReceptionPossibleEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartE @1864
+    _ZTv0_n136_NK5flora9LoRaRadio21getReceivedSignalPartEv @1865
+    _ZTv0_n144_NK4inet13physicallayer13ReceptionBase20getPreambleStartTimeEv @1866
+    _ZTv0_n144_NK4inet13physicallayer16TransmissionBase12getStartTimeEv @1867
+    _ZTv0_n144_NK5flora12LoRaReceiver27computeIsReceptionAttemptedEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartEPKNS2_13IInterferenceE @1868
+    _ZTv0_n152_NK4inet13physicallayer13ReceptionBase18getPreambleEndTimeEv @1869
+    _ZTv0_n152_NK4inet13physicallayer16TransmissionBase10getEndTimeEv @1870
+    _ZTv0_n152_NK5flora12LoRaReceiver28computeIsReceptionSuccessfulEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartEPKNS2_13IInterferenceEPKNS2_5ISnirE @1871
+    _ZTv0_n160_NK4inet13physicallayer13ReceptionBase18getHeaderStartTimeEv @1872
+    _ZTv0_n160_NK5flora12LoRaReceiver24computeReceptionDecisionEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionENS2_12IRadioSignal10SignalPartEPKNS2_13IInterferenceEPKNS2_5ISnirE @1873
+    _ZTv0_n168_NK4inet13physicallayer13ReceptionBase16getHeaderEndTimeEv @1874
+    _ZTv0_n168_NK5flora12LoRaReceiver22computeReceptionResultEPKN4inet13physicallayer10IListeningEPKNS2_10IReceptionEPKNS2_13IInterferenceEPKNS2_5ISnirEPKSt6vectorIPKNS2_18IReceptionDecisionESaISI_EE @1875
+    _ZTv0_n176_NK4inet13physicallayer13ReceptionBase16getDataStartTimeEv @1876
+    _ZTv0_n176_NK4inet13physicallayer16TransmissionBase20getPreambleStartTimeEv @1877
+    _ZTv0_n184_NK4inet13physicallayer13ReceptionBase14getDataEndTimeEv @1878
+    _ZTv0_n184_NK4inet13physicallayer16TransmissionBase18getPreambleEndTimeEv @1879
+    _ZTv0_n192_NK4inet13physicallayer13ReceptionBase11getDurationEv @1880
+    _ZTv0_n192_NK4inet13physicallayer16TransmissionBase18getHeaderStartTimeEv @1881
+    _ZTv0_n200_NK4inet13physicallayer16TransmissionBase16getHeaderEndTimeEv @1882
+    _ZTv0_n208_NK4inet13physicallayer13ReceptionBase19getPreambleDurationEv @1883
+    _ZTv0_n208_NK4inet13physicallayer16TransmissionBase16getDataStartTimeEv @1884
+    _ZTv0_n216_NK4inet13physicallayer13ReceptionBase17getHeaderDurationEv @1885
+    _ZTv0_n216_NK4inet13physicallayer16TransmissionBase14getDataEndTimeEv @1886
+    _ZTv0_n224_NK4inet13physicallayer13ReceptionBase15getDataDurationEv @1887
+    _ZTv0_n224_NK4inet13physicallayer16TransmissionBase11getDurationEv @1888
+    _ZTv0_n232_NK4inet13physicallayer13ReceptionBase16getStartPositionEv @1889
+    _ZTv0_n240_NK4inet13physicallayer13ReceptionBase14getEndPositionEv @1890
+    _ZTv0_n240_NK4inet13physicallayer16TransmissionBase19getPreambleDurationEv @1891
+    _ZTv0_n248_NK4inet13physicallayer13ReceptionBase19getStartOrientationEv @1892
+    _ZTv0_n248_NK4inet13physicallayer16TransmissionBase17getHeaderDurationEv @1893
+    _ZTv0_n24_N4inet13physicallayer12ReceiverBaseD0Ev @1894
+    _ZTv0_n24_N4inet13physicallayer12ReceiverBaseD1Ev @1895
+    _ZTv0_n24_N4inet13physicallayer13FlatRadioBaseD0Ev @1896
+    _ZTv0_n24_N4inet13physicallayer13FlatRadioBaseD1Ev @1897
+    _ZTv0_n24_N4inet13physicallayer13ReceptionBaseD0Ev @1898
+    _ZTv0_n24_N4inet13physicallayer13ReceptionBaseD1Ev @1899
+    _ZTv0_n24_N4inet13physicallayer15AnalogModelBaseD0Ev @1900
+    _ZTv0_n24_N4inet13physicallayer15AnalogModelBaseD1Ev @1901
+    _ZTv0_n24_N4inet13physicallayer15ScalarReceptionD0Ev @1902
+    _ZTv0_n24_N4inet13physicallayer15ScalarReceptionD1Ev @1903
+    _ZTv0_n24_N4inet13physicallayer15TransmitterBaseD0Ev @1904
+    _ZTv0_n24_N4inet13physicallayer15TransmitterBaseD1Ev @1905
+    _ZTv0_n24_N4inet13physicallayer16FlatReceiverBaseD0Ev @1906
+    _ZTv0_n24_N4inet13physicallayer16FlatReceiverBaseD1Ev @1907
+    _ZTv0_n24_N4inet13physicallayer16SnirReceiverBaseD0Ev @1908
+    _ZTv0_n24_N4inet13physicallayer16SnirReceiverBaseD1Ev @1909
+    _ZTv0_n24_N4inet13physicallayer16TransmissionBaseD0Ev @1910
+    _ZTv0_n24_N4inet13physicallayer16TransmissionBaseD1Ev @1911
+    _ZTv0_n24_N4inet13physicallayer17FlatReceptionBaseD0Ev @1912
+    _ZTv0_n24_N4inet13physicallayer17FlatReceptionBaseD1Ev @1913
+    _ZTv0_n24_N4inet13physicallayer19FlatTransmitterBaseD0Ev @1914
+    _ZTv0_n24_N4inet13physicallayer19FlatTransmitterBaseD1Ev @1915
+    _ZTv0_n24_N4inet13physicallayer19NarrowbandRadioBaseD0Ev @1916
+    _ZTv0_n24_N4inet13physicallayer19NarrowbandRadioBaseD1Ev @1917
+    _ZTv0_n24_N4inet13physicallayer21ScalarAnalogModelBaseD0Ev @1918
+    _ZTv0_n24_N4inet13physicallayer21ScalarAnalogModelBaseD1Ev @1919
+    _ZTv0_n24_N4inet13physicallayer22NarrowbandReceiverBaseD0Ev @1920
+    _ZTv0_n24_N4inet13physicallayer22NarrowbandReceiverBaseD1Ev @1921
+    _ZTv0_n24_N4inet13physicallayer23NarrowbandReceptionBaseD0Ev @1922
+    _ZTv0_n24_N4inet13physicallayer23NarrowbandReceptionBaseD1Ev @1923
+    _ZTv0_n24_N4inet13physicallayer25NarrowbandTransmitterBaseD0Ev @1924
+    _ZTv0_n24_N4inet13physicallayer25NarrowbandTransmitterBaseD1Ev @1925
+    _ZTv0_n24_N5flora11LoRaGWRadioD0Ev @1926
+    _ZTv0_n24_N5flora11LoRaGWRadioD1Ev @1927
+    _ZTv0_n24_N5flora12LoRaReceiverD0Ev @1928
+    _ZTv0_n24_N5flora12LoRaReceiverD1Ev @1929
+    _ZTv0_n24_N5flora13LoRaReceptionD0Ev @1930
+    _ZTv0_n24_N5flora13LoRaReceptionD1Ev @1931
+    _ZTv0_n24_N5flora15LoRaAnalogModelD0Ev @1932
+    _ZTv0_n24_N5flora15LoRaAnalogModelD1Ev @1933
+    _ZTv0_n24_N5flora15LoRaTransmitterD0Ev @1934
+    _ZTv0_n24_N5flora15LoRaTransmitterD1Ev @1935
+    _ZTv0_n24_N5flora16LoRaTransmissionD0Ev @1936
+    _ZTv0_n24_N5flora16LoRaTransmissionD1Ev @1937
+    _ZTv0_n24_N5flora9LoRaRadioD0Ev @1938
+    _ZTv0_n24_N5flora9LoRaRadioD1Ev @1939
+    _ZTv0_n24_NK4inet13physicallayer15ScalarReception8getPowerEv @1940
+    _ZTv0_n24_NK4inet13physicallayer23NarrowbandReceptionBase18getCenterFrequencyEv @1941
+    _ZTv0_n24_NK5flora13LoRaReception8getPowerEv @1942
+    _ZTv0_n24_NK5flora16LoRaTransmission18getCenterFrequencyEv @1943
+    _ZTv0_n24_NK5flora16LoRaTransmission8getPowerEv @1944
+    _ZTv0_n256_NK4inet13physicallayer13ReceptionBase17getEndOrientationEv @1945
+    _ZTv0_n256_NK4inet13physicallayer16TransmissionBase15getDataDurationEv @1946
+    _ZTv0_n264_NK4inet13physicallayer13ReceptionBase14getAnalogModelEv @1947
+    _ZTv0_n264_NK4inet13physicallayer16TransmissionBase16getStartPositionEv @1948
+    _ZTv0_n272_NK4inet13physicallayer16TransmissionBase14getEndPositionEv @1949
+    _ZTv0_n280_NK4inet13physicallayer16TransmissionBase19getStartOrientationEv @1950
+    _ZTv0_n288_NK4inet13physicallayer16TransmissionBase17getEndOrientationEv @1951
+    _ZTv0_n296_NK4inet13physicallayer16TransmissionBase14getAnalogModelEv @1952
+    _ZTv0_n32_NK4inet13physicallayer23NarrowbandReceptionBase12getBandwidthEv @1953
+    _ZTv0_n32_NK4inet13physicallayer26StateBasedEpEnergyConsumer15getEnergySourceEv @1954
+    _ZTv0_n32_NK4inet13physicallayer5Radio12getRadioGateEv @1955
+    _ZTv0_n32_NK5flora15LoRaAnalogModel13printToStreamERSoii @1956
+    _ZTv0_n32_NK5flora15LoRaTransmitter13printToStreamERSoii @1957
+    _ZTv0_n32_NK5flora16LoRaTransmission12getBandwidthEv @1958
+    _ZTv0_n32_NK5flora16LoRaTransmission13printToStreamERSoii @1959
+    _ZTv0_n32_NK5flora9LoRaRadio12getRadioGateEv @1960
+    _ZTv0_n40_NK4inet13physicallayer15ScalarReception15computeMinPowerEN7omnetpp7SimTimeES3_ @1961
+    _ZTv0_n40_NK4inet13physicallayer5Radio12getRadioModeEv @1962
+    _ZTv0_n40_NK5flora13LoRaReception15computeMinPowerEN7omnetpp7SimTimeES2_ @1963
+    _ZTv0_n40_NK5flora16LoRaTransmission15computeMinPowerEN7omnetpp7SimTimeES2_ @1964
+    _ZTv0_n40_NK5flora9LoRaRadio12getRadioModeEv @1965
+    _ZTv0_n56_NK4inet13physicallayer5Radio17getReceptionStateEv @1966
+    _ZTv0_n56_NK5flora9LoRaRadio17getReceptionStateEv @1967
+    _ZTv0_n64_NK4inet13physicallayer5Radio20getTransmissionStateEv @1968
+    _ZTv0_n64_NK5flora9LoRaRadio20getTransmissionStateEv @1969
+    _ZTv0_n72_NK4inet13physicallayer5Radio5getIdEv @1970
+    _ZTv0_n72_NK5flora9LoRaRadio5getIdEv @1971
+    _ZTv0_n80_NK4inet13physicallayer5Radio10getAntennaEv @1972
+    _ZTv0_n80_NK5flora9LoRaRadio10getAntennaEv @1973
+    _ZTv0_n88_NK4inet13physicallayer5Radio14getTransmitterEv @1974
+    _ZTv0_n88_NK5flora9LoRaRadio14getTransmitterEv @1975
+    _ZTv0_n96_NK4inet13physicallayer12ReceiverBase23getMinInterferencePowerEv @1976
+    _ZTv0_n96_NK4inet13physicallayer13ReceptionBase11getDurationEv @1977
+    _ZTv0_n96_NK4inet13physicallayer13ReceptionBase11getReceiverEv @1978
+    _ZTv0_n96_NK4inet13physicallayer15TransmitterBase11getMaxPowerEv @1979
+    _ZTv0_n96_NK4inet13physicallayer16TransmissionBase11getDurationEv @1980
+    _ZTv0_n96_NK4inet13physicallayer16TransmissionBase5getIdEv @1981
+    _ZTv0_n96_NK4inet13physicallayer19FlatTransmitterBase11getMaxPowerEv @1982
+    _ZTv0_n96_NK4inet13physicallayer5Radio11getReceiverEv @1983
+    _ZTv0_n96_NK5flora12LoRaReceiver23getMinInterferencePowerEv @1984
+    _ZTv0_n96_NK5flora15LoRaAnalogModel16computeReceptionEPKN4inet13physicallayer6IRadioEPKNS2_13ITransmissionEPKNS2_8IArrivalE @1985
+    _ZTv0_n96_NK5flora9LoRaRadio11getReceiverEv @1986
+    _ZTvn8_n144_NK5flora9LoRaRadio13printToStreamERSoii @1987
+    _ZTvn8_n24_N4inet13physicallayer13FlatRadioBaseD0Ev @1988
+    _ZTvn8_n24_N4inet13physicallayer13FlatRadioBaseD1Ev @1989
+    _ZTvn8_n24_N4inet13physicallayer19NarrowbandRadioBaseD0Ev @1990
+    _ZTvn8_n24_N4inet13physicallayer19NarrowbandRadioBaseD1Ev @1991
+    _ZTvn8_n24_N5flora11LoRaGWRadioD0Ev @1992
+    _ZTvn8_n24_N5flora11LoRaGWRadioD1Ev @1993
+    _ZTvn8_n24_N5flora9LoRaRadioD0Ev @1994
+    _ZTvn8_n24_N5flora9LoRaRadioD1Ev @1995
+    _ZZNK4inet5Chunk4peekIN5flora12LoRaMacFrameEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EEE_8__invokeESI_ @1996
+    _ZZNK4inet5Chunk4peekIN5flora12LoRaMacFrameEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EESA_SF_iE_8__invokeESI_SA_SF_i @1997
+    _ZZNK4inet5Chunk4peekIN5flora13LoRaAppPacketEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EEE_8__invokeESI_ @1998
+    _ZZNK4inet5Chunk4peekIN5flora13LoRaAppPacketEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EESA_SF_iE_8__invokeESI_SA_SF_i @1999
+    _ZZNK4inet5Chunk4peekIN5flora15LoRaPhyPreambleEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EEE_8__invokeESI_ @2000
+    _ZZNK4inet5Chunk4peekIN5flora15LoRaPhyPreambleEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSB_5units1bEEEiENUlRKNS4_IS0_EESA_SF_iE_8__invokeESI_SA_SF_i @2001
+    _ZZNK4inet5Chunk4peekINS_11FieldsChunkEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSA_5units1bEEEiENUlRKNS3_IS0_EEE_8__invokeESH_ @2002
+    _ZZNK4inet5Chunk4peekINS_11FieldsChunkEEEKNS_12IntrusivePtrIT_EERKNS0_8IteratorENS_5units5valueIxNSA_5units1bEEEiENUlRKNS3_IS0_EES9_SE_iE_8__invokeESH_S9_SE_i @2003
+    __clang_call_terminate @2004
