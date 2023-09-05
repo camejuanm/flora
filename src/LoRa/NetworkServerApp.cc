@@ -26,6 +26,7 @@
 #include "inet/networklayer/common/L3Tools.h"
 #include "inet/networklayer/ipv4/Ipv4Header_m.h"
 #include <math.h>
+#include <numeric>
 
 namespace flora {
 
@@ -50,7 +51,6 @@ void NetworkServerApp::initialize(int stage)
         for(int i=0;i<6;i++)
         {
             counterUniqueReceivedPacketsPerSF[i] = 0;
-            counterOfSentPacketsFromNodesPerSF[i] = 0;
         }
     }
 }
@@ -164,6 +164,8 @@ void NetworkServerApp::finish()
         recordScalar("DER SF12", double(counterUniqueReceivedPacketsPerSF[5]) / counterOfSentPacketsFromNodesPerSF[5]);
     else
         recordScalar("DER SF12", 0);
+
+    recordScalar("Fast ADR count", counterFastADR);
 }
 
 bool NetworkServerApp::isPacketProcessed(const Ptr<const LoRaMacFrame> &pkt)
@@ -314,169 +316,220 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
     {
         sendADRAckRep = true;
     }
-    if(adrMethod == "max" || adrMethod == "avg" || adrMethod == "owa" || adrMethod == "min")
+    for(uint i=0;i<knownNodes.size();i++)
     {
-        for(uint i=0;i<knownNodes.size();i++)
+        if(knownNodes[i].srcAddr == frame->getTransmitterAddress())
         {
-            if(knownNodes[i].srcAddr == frame->getTransmitterAddress())
-            {
-                knownNodes[i].adrListSNIR.push_back(SNIRinGW);
-                knownNodes[i].historyAllSNIR->record(SNIRinGW);
-                knownNodes[i].historyAllRSSI->record(RSSIinGW);
-    //            knownNodes[i].receivedSeqNumber->record(frame->getSequenceNumber());
-                knownNodes[i].receivedSeqNumber.push_back(frame->getSequenceNumber());
-                if(knownNodes[i].adrListSNIR.size() == 20) knownNodes[i].adrListSNIR.pop_front();
-                knownNodes[i].framesFromLastADRCommand++;
-                if(knownNodes[i].receivedSeqNumber.size() == 20) knownNodes[i].receivedSeqNumber.pop_front();
+            //short version
+//            knownNodes[i].shortAdrListSNIR.push_back(SNIRinGW);
+//            if(knownNodes[i].shortAdrListSNIR.size() > 5) knownNodes[i].adrListSNIR.pop_front();
+//            knownNodes[i].shortReceivedSeqNumber.push_back(frame->getSequenceNumber());
+//            if(knownNodes[i].shortReceivedSeqNumber.size() > 5) knownNodes[i].receivedSeqNumber.pop_front();
+//            recordScalar("newestPacketSNR",knownNodes[i].shortAdrListSNIR.back());
 
-                if(knownNodes[i].framesFromLastADRCommand == 20 || sendADRAckRep == true)
+            //normal
+            knownNodes[i].adrListSNIR.push_back(SNIRinGW);
+            knownNodes[i].historyAllSNIR->record(SNIRinGW);
+            knownNodes[i].historyAllRSSI->record(RSSIinGW);
+//            knownNodes[i].receivedSeqNumber->record(frame->getSequenceNumber());
+            knownNodes[i].receivedSeqNumber.push_back(frame->getSequenceNumber());
+            if(knownNodes[i].adrListSNIR.size() == 20) knownNodes[i].adrListSNIR.pop_front();
+            knownNodes[i].framesFromLastADRCommand++;
+            if(knownNodes[i].receivedSeqNumber.size() == 20) knownNodes[i].receivedSeqNumber.pop_front();
+            recordScalar("framesFromLastADRCommand",knownNodes[i].framesFromLastADRCommand);
+            recordScalar("newestPacket",knownNodes[i].receivedSeqNumber.back());
+            recordScalar("oldestPacket",knownNodes[i].receivedSeqNumber.front());
+            recordScalar("sizeOfStoredSequenceNumbers",knownNodes[i].receivedSeqNumber.size());
+
+            if(knownNodes[i].receivedSeqNumber.size() > 18 && knownNodes[i].framesFromLastADRCommand == 5 || sendADRAckRep == true)
+            {
+                double begin=knownNodes[i].receivedSeqNumber.front();
+                double end=knownNodes[i].receivedSeqNumber.back();
+                double size=knownNodes[i].receivedSeqNumber.size();
+                //find packet loss after 5 frames
+                double pathloss=(end-begin-(size-1))/(end-begin);
+                double pathlossRate = (int)(pathloss * 100000 + .5);
+                double pdr=0;
+                pathlossRate=pathlossRate / 100000;
+                pdr = 1-pathlossRate;
+                recordScalar("Current PDR",pdr);
+                EV << "Current PDR: " << pdr << endl;
+    //            double sum = std::accumulate(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), 0.0);
+    //            double mean = sum / knownNodes[i].shortAdrListSNIR.size();
+    //            std::vector<double> diff(knownNodes[i].shortAdrListSNIR.size());
+    //            std::transform(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), diff.begin(), [mean](double x) { return x - mean; });
+    //            double sq_sum = std::inner_product(diff.begin(), diff.end(), diff.begin(), 0.0);
+    //            double stdev = std::sqrt(sq_sum / knownNodes[i].shortAdrListSNIR.size());
+    //            recordScalar("stdev",stdev);
+
+
+
+                //if hi quality then only use 5
+//                if (pdr >= 0.8 && stdev < 2.5)
+                if (pdr >= 0.95)
                 {
                     nodeIndex = i;
                     knownNodes[i].framesFromLastADRCommand = 0;
                     sendADR = true;
-                    if(adrMethod == "max")
+                    counterFastADR++;
+
+                    //adr AVG
+                    double totalSNR = 0;
+                    int numberOfFields = 0;
+                    for (std::list<double>::iterator it=knownNodes[i].adrListSNIR.begin(); it != knownNodes[i].adrListSNIR.end(); ++it)
                     {
-                        SNRm = *max_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
+                        totalSNR+=*it;
+                        numberOfFields++;
                     }
-                    if(adrMethod == "avg")
-                    {
-                        double totalSNR = 0;
-                        int numberOfFields = 0;
-                        for (std::list<double>::iterator it=knownNodes[i].adrListSNIR.begin(); it != knownNodes[i].adrListSNIR.end(); ++it)
-                        {
-                            totalSNR+=*it;
-                            numberOfFields++;
-                        }
-                        SNRm = totalSNR/numberOfFields;
-                    }
-                    if(adrMethod == "min")
-                   {
-                       //min ADR
-                       SNRm = *min_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
-                   }
-                    if(adrMethod == "owa")
-                    {
-                        double begin=knownNodes[i].receivedSeqNumber.front();
-                        double end=knownNodes[i].receivedSeqNumber.back();
-                        double size=knownNodes[i].receivedSeqNumber.size();
-                        double pathloss=(end-begin-18)/(end-begin);
-                        double pathlossRate = (int)(pathloss * 100000 + .5);
-                        pathlossRate=pathlossRate / 100000;
-                        knownNodes[i].adrListSNIR.sort();
-                        double totalSNR = 0;
-                        double result=0;
-                        int last = 19;
-                        for (std::list<double>::iterator j=knownNodes[i].adrListSNIR.begin(); j != knownNodes[i].adrListSNIR.end(); ++j)
-                        {
-                            //pessimistic owa ADR
-                            if(last==1){
-                                result=pow(pathlossRate,(19-last));
-                            }else{
-                                result=(1-pathlossRate)*pow(pathlossRate,(19-last));
-                            }
-                            result = (int)(result * 100000 + .5);
-                            result=result / 100000;
-
-                            totalSNR=(*j * result)+totalSNR;
-
-                            last=last-1;
-                        }
-                        SNRm = totalSNR;
-                    }
-
-
+                    SNRm = totalSNR/numberOfFields;
                 }
-
             }
-        }
-
-        if(sendADR || sendADRAckRep)
-        {
-            auto mgmtPacket = makeShared<LoRaAppPacket>();
-            mgmtPacket->setMsgType(TXCONFIG);
-
-            if(sendADR)
+            if(knownNodes[i].framesFromLastADRCommand == 20 || sendADRAckRep == true)
             {
-                double SNRmargin;
-                double requiredSNR;
-                if(frame->getLoRaSF() == 7) requiredSNR = -7.5;
-                if(frame->getLoRaSF() == 8) requiredSNR = -10;
-                if(frame->getLoRaSF() == 9) requiredSNR = -12.5;
-                if(frame->getLoRaSF() == 10) requiredSNR = -15;
-                if(frame->getLoRaSF() == 11) requiredSNR = -17.5;
-                if(frame->getLoRaSF() == 12) requiredSNR = -20;
-
-                //recordScalar("SNRm", SNRm);
-                //recordScalar("requiredSNR", requiredSNR);
-                //recordScalar("requiredSNR", requiredSNR);
-
-                SNRmargin = SNRm - requiredSNR - adrDeviceMargin;
-                //recordScalar("SNRmargin", SNRmargin);
-
-                knownNodes[nodeIndex].calculatedSNRmargin->record(SNRmargin);
-                int Nstep = round(SNRmargin/3);
-                LoRaOptions newOptions;
-
-                // Increase the data rate with each step
-                int calculatedSF = frame->getLoRaSF();
-                while(Nstep > 0 && calculatedSF > 7)
+                nodeIndex = i;
+                knownNodes[i].framesFromLastADRCommand = 0;
+                sendADR = true;
+                if(adrMethod == "max")
                 {
-                    calculatedSF--;
-                    Nstep--;
+                    SNRm = *max_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                 }
-
-                // Decrease the Tx power by 3 for each step, until min reached
-                double calculatedPowerdBm = math::mW2dBmW(frame->getLoRaTP()) + 30;
-                while(Nstep > 0 && calculatedPowerdBm > 2)
+                if(adrMethod == "avg")
                 {
-                    calculatedPowerdBm-=3;
-                    Nstep--;
+                    double totalSNR = 0;
+                    int numberOfFields = 0;
+                    for (std::list<double>::iterator it=knownNodes[i].adrListSNIR.begin(); it != knownNodes[i].adrListSNIR.end(); ++it)
+                    {
+                        totalSNR+=*it;
+                        numberOfFields++;
+                    }
+                    SNRm = totalSNR/numberOfFields;
                 }
-                if(calculatedPowerdBm < 2) calculatedPowerdBm = 2;
-
-                // Increase the Tx power by 3 for each step, until max reached
-                while(Nstep < 0 && calculatedPowerdBm < 14)
+                if(adrMethod == "min")
                 {
-                    calculatedPowerdBm+=3;
-                    Nstep++;
+                   //min ADR
+                   SNRm = *min_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                 }
-                if(calculatedPowerdBm > 14) calculatedPowerdBm = 14;
+                if(adrMethod == "owa")
+                {
+                    double begin=knownNodes[i].receivedSeqNumber.front();
+                    double end=knownNodes[i].receivedSeqNumber.back();
+                    double size=knownNodes[i].receivedSeqNumber.size();
+                    double pathloss=(end-begin-(size-1))/(end-begin);
+//                        recordScalar("packetLossRatio",pathloss);
+                    double pathlossRate = (int)(pathloss * 100000 + .5);
+                    pathlossRate=pathlossRate / 100000;
+//                        recordScalar("packetLossRate",pathlossRate);
+                    knownNodes[i].adrListSNIR.sort();
+                    double totalSNR = 0;
+                    double result=0;
+                    int last = 19;
+                    for (std::list<double>::iterator j=knownNodes[i].adrListSNIR.begin(); j != knownNodes[i].adrListSNIR.end(); ++j)
+                    {
+                        //pessimistic owa ADR
+                        if(last==1){
+                            result=pow(pathlossRate,(19-last));
+                        }else{
+                            result=(1-pathlossRate)*pow(pathlossRate,(19-last));
+                        }
+                        result = (int)(result * 100000 + .5);
+                        result=result / 100000;
 
-                newOptions.setLoRaSF(calculatedSF);
-                newOptions.setLoRaTP(calculatedPowerdBm);
-                EV << calculatedSF << endl;
-                EV << calculatedPowerdBm << endl;
-                mgmtPacket->setOptions(newOptions);
+                        totalSNR=(*j * result)+totalSNR;
+
+                        last=last-1;
+                    }
+                    SNRm = totalSNR;
+                }
             }
-
-            if(simTime() >= getSimulation()->getWarmupPeriod() && sendADR == true)
-            {
-                knownNodes[nodeIndex].numberOfSentADRPackets++;
-            }
-
-            auto frameToSend = makeShared<LoRaMacFrame>();
-            frameToSend->setChunkLength(B(par("headerLength").intValue()));
-
-          //  LoRaMacFrame *frameToSend = new LoRaMacFrame("ADRPacket");
-
-            //frameToSend->encapsulate(mgmtPacket);
-            frameToSend->setReceiverAddress(frame->getTransmitterAddress());
-            //FIXME: What value to set for LoRa TP
-            //frameToSend->setLoRaTP(pkt->getLoRaTP());
-            frameToSend->setLoRaTP(math::dBmW2mW(14));
-            frameToSend->setLoRaCF(frame->getLoRaCF());
-            frameToSend->setLoRaSF(frame->getLoRaSF());
-            frameToSend->setLoRaBW(frame->getLoRaBW());
-
-            auto pktAux = new Packet("ADRPacket");
-            mgmtPacket->setChunkLength(B(par("headerLength").intValue()));
-
-            pktAux->insertAtFront(mgmtPacket);
-            pktAux->insertAtFront(frameToSend);
-            socket.sendTo(pktAux, pickedGateway, destPort);
-
         }
     }
+
+    if(sendADR || sendADRAckRep)
+    {
+        auto mgmtPacket = makeShared<LoRaAppPacket>();
+        mgmtPacket->setMsgType(TXCONFIG);
+
+        if(sendADR)
+        {
+            double SNRmargin;
+            double requiredSNR;
+            if(frame->getLoRaSF() == 7) requiredSNR = -7.5;
+            if(frame->getLoRaSF() == 8) requiredSNR = -10;
+            if(frame->getLoRaSF() == 9) requiredSNR = -12.5;
+            if(frame->getLoRaSF() == 10) requiredSNR = -15;
+            if(frame->getLoRaSF() == 11) requiredSNR = -17.5;
+            if(frame->getLoRaSF() == 12) requiredSNR = -20;
+
+            //recordScalar("SNRm", SNRm);
+            //recordScalar("requiredSNR", requiredSNR);
+            //recordScalar("requiredSNR", requiredSNR);
+
+            SNRmargin = SNRm - requiredSNR - adrDeviceMargin;
+            //recordScalar("SNRmargin", SNRmargin);
+
+            knownNodes[nodeIndex].calculatedSNRmargin->record(SNRmargin);
+            int Nstep = round(SNRmargin/3);
+            recordScalar("Nstep", Nstep);
+            LoRaOptions newOptions;
+
+            // Increase the data rate with each step
+            int calculatedSF = frame->getLoRaSF();
+            while(Nstep > 0 && calculatedSF > 7)
+            {
+                calculatedSF--;
+                Nstep--;
+            }
+
+            // Decrease the Tx power by 3 for each step, until min reached
+            double calculatedPowerdBm = math::mW2dBmW(frame->getLoRaTP()) + 30;
+            while(Nstep > 0 && calculatedPowerdBm > 2)
+            {
+                calculatedPowerdBm-=3;
+                Nstep--;
+            }
+            if(calculatedPowerdBm < 2) calculatedPowerdBm = 2;
+
+            // Increase the Tx power by 3 for each step, until max reached
+            while(Nstep < 0 && calculatedPowerdBm < 14)
+            {
+                calculatedPowerdBm+=3;
+                Nstep++;
+            }
+            if(calculatedPowerdBm > 14) calculatedPowerdBm = 14;
+
+            newOptions.setLoRaSF(calculatedSF);
+            newOptions.setLoRaTP(calculatedPowerdBm);
+            EV << calculatedSF << endl;
+            EV << calculatedPowerdBm << endl;
+            mgmtPacket->setOptions(newOptions);
+        }
+
+        if(simTime() >= getSimulation()->getWarmupPeriod() && sendADR == true)
+        {
+            knownNodes[nodeIndex].numberOfSentADRPackets++;
+        }
+
+        auto frameToSend = makeShared<LoRaMacFrame>();
+        frameToSend->setChunkLength(B(par("headerLength").intValue()));
+
+      //  LoRaMacFrame *frameToSend = new LoRaMacFrame("ADRPacket");
+
+        //frameToSend->encapsulate(mgmtPacket);
+        frameToSend->setReceiverAddress(frame->getTransmitterAddress());
+        //FIXME: What value to set for LoRa TP
+        //frameToSend->setLoRaTP(pkt->getLoRaTP());
+        frameToSend->setLoRaTP(math::dBmW2mW(14));
+        frameToSend->setLoRaCF(frame->getLoRaCF());
+        frameToSend->setLoRaSF(frame->getLoRaSF());
+        frameToSend->setLoRaBW(frame->getLoRaBW());
+
+        auto pktAux = new Packet("ADRPacket");
+        mgmtPacket->setChunkLength(B(par("headerLength").intValue()));
+
+        pktAux->insertAtFront(mgmtPacket);
+        pktAux->insertAtFront(frameToSend);
+        socket.sendTo(pktAux, pickedGateway, destPort);
+}
 
     //delete pkt;
 }

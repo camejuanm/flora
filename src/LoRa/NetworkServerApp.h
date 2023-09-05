@@ -40,10 +40,14 @@ public:
     int lastSeqNoProcessed;
     int numberOfSentADRPackets;
     std::list<double> adrListSNIR;
+    std::list<double> shortAdrListSNIR;
     cOutVector *historyAllSNIR;
     cOutVector *historyAllRSSI;
     std::list<double> receivedSeqNumber;//cOutVector *receivedSeqNumber;
+    std::list<double> shortReceivedSeqNumber;
     cOutVector *calculatedSNRmargin;
+
+
 };
 
 class knownGW
@@ -73,6 +77,7 @@ class NetworkServerApp : public cSimpleModule, cListener
     cMessage *selfMsg = nullptr;
     int totalReceivedPackets;
     std::string adrMethod;
+//    std::string adrStepTwo;
     double adrDeviceMargin;
     std::map<int, int> numReceivedPerNode;
 
@@ -99,6 +104,7 @@ class NetworkServerApp : public cSimpleModule, cListener
     int counterOfSentPacketsFromNodesPerSF[6];
     int counterUniqueReceivedPackets = 0;
     int counterUniqueReceivedPacketsPerSF[6];
+    int counterFastADR = 0;
 };
 } //namespace inet
 #endif
