@@ -37,6 +37,7 @@ class knownNode
 public:
     MacAddress srcAddr;
     int framesFromLastADRCommand;
+    int fastADRCounter;
     int lastSeqNoProcessed;
     int numberOfSentADRPackets;
     std::list<double> adrListSNIR;
@@ -46,6 +47,7 @@ public:
     std::list<double> receivedSeqNumber;//cOutVector *receivedSeqNumber;
     std::list<double> shortReceivedSeqNumber;
     cOutVector *calculatedSNRmargin;
+    cOutVector *SNRmVector;
 
 
 };

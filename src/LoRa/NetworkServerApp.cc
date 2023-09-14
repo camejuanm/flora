@@ -199,6 +199,7 @@ void NetworkServerApp::updateKnownNodes(Packet* pkt)
         newNode.srcAddr= frame->getTransmitterAddress();
         newNode.lastSeqNoProcessed = frame->getSequenceNumber();
         newNode.framesFromLastADRCommand = 0;
+        newNode.fastADRCounter = 0;
         newNode.numberOfSentADRPackets = 0;
         newNode.historyAllSNIR = new cOutVector;
         newNode.historyAllSNIR->setName("Vector of SNIR per node");
@@ -211,6 +212,8 @@ void NetworkServerApp::updateKnownNodes(Packet* pkt)
 //        newNode.receivedSeqNumber->setName("Received Sequence number");
         newNode.calculatedSNRmargin = new cOutVector;
         newNode.calculatedSNRmargin->setName("Calculated SNRmargin in ADR");
+//        newNode.SNRmVector = new cOutVector;
+//        newNode.SNRmVector->setName("SNRm vector trace");
         knownNodes.push_back(newNode);
     }
 }
@@ -352,37 +355,36 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                 double pdr=0;
                 pathlossRate=pathlossRate / 100000;
                 pdr = 1-pathlossRate;
-                recordScalar("Current PDR",pdr);
+                recordScalar("Current PDR of last 20 frames",pdr);
                 EV << "Current PDR: " << pdr << endl;
-    //            double sum = std::accumulate(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), 0.0);
-    //            double mean = sum / knownNodes[i].shortAdrListSNIR.size();
-    //            std::vector<double> diff(knownNodes[i].shortAdrListSNIR.size());
-    //            std::transform(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), diff.begin(), [mean](double x) { return x - mean; });
-    //            double sq_sum = std::inner_product(diff.begin(), diff.end(), diff.begin(), 0.0);
-    //            double stdev = std::sqrt(sq_sum / knownNodes[i].shortAdrListSNIR.size());
-    //            recordScalar("stdev",stdev);
-
-
-
-                //if hi quality then only use 5
-//                if (pdr >= 0.8 && stdev < 2.5)
-                if (pdr >= 0.95)
+                double sum = std::accumulate(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), 0.0);
+                double mean = sum / knownNodes[i].shortAdrListSNIR.size();
+                std::vector<double> diff(knownNodes[i].shortAdrListSNIR.size());
+                std::transform(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), diff.begin(), [mean](double x) { return x - mean; });
+//                double sq_sum = std::inner_product(diff.begin(), diff.end(), diff.begin(), 0.0);
+//                double stdev = std::sqrt(sq_sum / knownNodes[i].shortAdrListSNIR.size());
+//                recordScalar("stdev",stdev);
+//                 if pdr is low, use ADR-min
+                if (pdr < 0.65)
                 {
                     nodeIndex = i;
                     knownNodes[i].framesFromLastADRCommand = 0;
                     sendADR = true;
                     counterFastADR++;
 
-                    //adr AVG
-                    double totalSNR = 0;
-                    int numberOfFields = 0;
-                    for (std::list<double>::iterator it=knownNodes[i].adrListSNIR.begin(); it != knownNodes[i].adrListSNIR.end(); ++it)
-                    {
-                        totalSNR+=*it;
-                        numberOfFields++;
-                    }
-                    SNRm = totalSNR/numberOfFields;
-                }
+                    //ADR-min
+                    SNRm = *min_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
+                 }
+                 if (pdr > 90)
+                 {
+                     nodeIndex = i;
+                     knownNodes[i].framesFromLastADRCommand = 0;
+                     sendADR = true;
+                     counterFastADR++;
+
+                     //ADR-min
+                     SNRm = *max_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
+                 }
             }
             if(knownNodes[i].framesFromLastADRCommand == 20 || sendADRAckRep == true)
             {
@@ -443,7 +445,6 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
             }
         }
     }
-
     if(sendADR || sendADRAckRep)
     {
         auto mgmtPacket = makeShared<LoRaAppPacket>();
@@ -460,16 +461,9 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
             if(frame->getLoRaSF() == 11) requiredSNR = -17.5;
             if(frame->getLoRaSF() == 12) requiredSNR = -20;
 
-            //recordScalar("SNRm", SNRm);
-            //recordScalar("requiredSNR", requiredSNR);
-            //recordScalar("requiredSNR", requiredSNR);
-
             SNRmargin = SNRm - requiredSNR - adrDeviceMargin;
-            //recordScalar("SNRmargin", SNRmargin);
-
             knownNodes[nodeIndex].calculatedSNRmargin->record(SNRmargin);
             int Nstep = round(SNRmargin/3);
-            recordScalar("Nstep", Nstep);
             LoRaOptions newOptions;
 
             // Increase the data rate with each step
@@ -529,10 +523,10 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
         pktAux->insertAtFront(mgmtPacket);
         pktAux->insertAtFront(frameToSend);
         socket.sendTo(pktAux, pickedGateway, destPort);
-}
-
+    }
     //delete pkt;
 }
+
 
 void NetworkServerApp::receiveSignal(cComponent *source, simsignal_t signalID, intval_t value, cObject *details)
 {
