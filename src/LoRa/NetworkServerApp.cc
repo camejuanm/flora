@@ -382,7 +382,7 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                      sendADR = true;
                      counterFastADR++;
 
-                     //ADR-min
+                     //ADR-max
                      SNRm = *max_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                  }
             }
