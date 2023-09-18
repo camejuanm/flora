@@ -104,8 +104,10 @@ void NetworkServerApp::finish()
         delete knownNodes[i].historyAllRSSI;
 //        delete knownNodes[i].receivedSeqNumber;
         delete knownNodes[i].calculatedSNRmargin;
-        recordScalar("Send ADR for node", knownNodes[i].numberOfSentADRPackets);
+        const std::string stringScalar = "Send ADR for node " + std::to_string(i);
+        recordScalar(stringScalar.c_str(), knownNodes[i].numberOfSentADRPackets);
     }
+
     for (std::map<int,int>::iterator it=numReceivedPerNode.begin(); it != numReceivedPerNode.end(); ++it)
     {
         const std::string stringScalar = "numReceivedFromNode " + std::to_string(it->first);
