@@ -478,6 +478,7 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
 
             // Decrease the Tx power by 3 for each step, until min reached
             double calculatedPowerdBm = math::mW2dBmW(frame->getLoRaTP()) + 30;
+            recordScalar("dBm before",calculatedPowerdBm);
             while(Nstep > 0 && calculatedPowerdBm > 2)
             {
                 calculatedPowerdBm-=3;
@@ -495,6 +496,7 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
 
             newOptions.setLoRaSF(calculatedSF);
             newOptions.setLoRaTP(calculatedPowerdBm);
+            recordScalar("dBm after",calculatedPowerdBm);
             EV << calculatedSF << endl;
             EV << calculatedPowerdBm << endl;
             mgmtPacket->setOptions(newOptions);
