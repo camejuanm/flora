@@ -346,6 +346,7 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
             recordScalar("oldestPacket",knownNodes[i].receivedSeqNumber.front());
             recordScalar("sizeOfStoredSequenceNumbers",knownNodes[i].receivedSeqNumber.size());
 
+            //evaluate every 5 frames
             if(knownNodes[i].receivedSeqNumber.size() > 18 && knownNodes[i].framesFromLastADRCommand == 5 || sendADRAckRep == true)
             {
                 double begin=knownNodes[i].receivedSeqNumber.front();
@@ -366,7 +367,9 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
 //                double sq_sum = std::inner_product(diff.begin(), diff.end(), diff.begin(), 0.0);
 //                double stdev = std::sqrt(sq_sum / knownNodes[i].shortAdrListSNIR.size());
 //                recordScalar("stdev",stdev);
-//                 if pdr is low, use ADR-min
+//
+//                if PDR is low, pick minimum SNR recorded from last 20 packets as indicator for link quality
+//                basically, we are being pessimistic on link quality so lets say SNR is very low
                 if (pdr < 0.65)
                 {
                     nodeIndex = i;
@@ -377,6 +380,8 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                     //ADR-min
                     SNRm = *min_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                  }
+
+//                if PDR is high, pick maximum SNR recorded from last 20 packets as indicator for link quality
                  if (pdr > 90)
                  {
                      nodeIndex = i;
@@ -387,6 +392,8 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                      //ADR-max
                      SNRm = *max_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                  }
+//                else, when PDR is between 65% and 90%, try again later and just use
+//                adr method specified in initialization file
             }
             if(knownNodes[i].framesFromLastADRCommand == 20 || sendADRAckRep == true)
             {
