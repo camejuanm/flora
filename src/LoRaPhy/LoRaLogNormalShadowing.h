@@ -12,16 +12,12 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
-
 #ifndef LORAPHY_LORALOGNORMALSHADOWING_H_
 #define LORAPHY_LORALOGNORMALSHADOWING_H_
-
 #include "inet/physicallayer/wireless/common/pathloss/FreeSpacePathLoss.h"
-
 using namespace inet;
 using namespace inet::physicallayer;
 namespace flora {
-
 /**
  * This class implements the log normal shadowing model.
  */
@@ -31,10 +27,10 @@ class LoRaLogNormalShadowing : public FreeSpacePathLoss
     m d0;
     double gamma;
     double sigma;
+    double PL_d0_db;
 
   protected:
     virtual void initialize(int stage) override;
-
   public:
     LoRaLogNormalShadowing();
     virtual std::ostream& printToStream(std::ostream& stream, int level, int evFlags = 0) const override;
@@ -42,7 +38,5 @@ class LoRaLogNormalShadowing : public FreeSpacePathLoss
     virtual double computePathLoss(mps propagationSpeed, Hz frequency, m distance) const override;
     m computeRange(W transmissionPower) const;
 };
-
 } // namespace inet
-
 #endif /* LORAPHY_LORALOGNORMALSHADOWING_H_ */

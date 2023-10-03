@@ -12,18 +12,13 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
-
 #include "LoRaLogNormalShadowing.h"
 #include "inet/common/INETMath.h"
-
 namespace flora {
-
 Define_Module(LoRaLogNormalShadowing);
-
 LoRaLogNormalShadowing::LoRaLogNormalShadowing()
 {
 }
-
 void LoRaLogNormalShadowing::initialize(int stage)
 {
     FreeSpacePathLoss::initialize(stage);
@@ -31,6 +26,7 @@ void LoRaLogNormalShadowing::initialize(int stage)
         sigma = par("sigma");
         gamma = par("gamma");
         d0 = m(par("d0"));
+        PL_d0_db = par("PL_d0_db");
     }
 }
 
@@ -38,16 +34,17 @@ std::ostream& LoRaLogNormalShadowing::printToStream(std::ostream& stream, int le
 {
     stream << "LoRaLogNormalShadowing";
     if (level <= PRINT_LEVEL_TRACE)
-        stream << ", alpha = " << alpha
+        stream << ", gamma = " << gamma
+               << ", PL_d0_db = " << PL_d0_db
                << ", systemLoss = " << systemLoss
                << ", sigma = " << sigma;
     return stream;
 }
-
 double LoRaLogNormalShadowing::computePathLoss(mps propagationSpeed, Hz frequency, m distance) const
 {
     // parameters taken from paper "Do LoRa Low-Power Wide-Area Networks Scale?"
     double PL_d0_db = 127.41;
+//    double PL_d0_db = 127.41;
     double PL_db = PL_d0_db + 10 * gamma * log10(unit(distance / d0).get()) + normal(0.0, sigma);
     return math::dB2fraction(-PL_db);
 }
@@ -56,6 +53,7 @@ m LoRaLogNormalShadowing::computeRange(W transmissionPower) const
 {
     // parameters taken from paper "Do LoRa Low-Power Wide-Area Networks Scale?"
     double PL_d0_db = 127.41;
+//    double PL_d0_db = 127.41;
     double max_sensitivity = -137;
     double trans_power_db = round(10 * log10(transmissionPower.get()*1000));
     EV << "LoRaLogNormalShadowing transmissionPower in W = " << transmissionPower << " in dBm = " << trans_power_db << endl;
@@ -63,5 +61,4 @@ m LoRaLogNormalShadowing::computeRange(W transmissionPower) const
     double distance = d0.get() * pow(10, rhs);
     return m(distance);
 }
-
 }
