@@ -152,8 +152,8 @@ void SimpleLoRaApp::handleMessageFromLowerLayer(cMessage *msg)
     const auto & packet = pkt->peekAtFront<LoRaAppPacket>();
     if (simTime() >= getSimulation()->getWarmupPeriod())
         receivedADRCommands++;
-//    if(evaluateADRinNode)
-//    {
+    if(evaluateADRinNode)
+    {
         ADR_ACK_CNT = 0;
         if(packet->getMsgType() == TXCONFIG)
         {
@@ -167,7 +167,7 @@ void SimpleLoRaApp::handleMessageFromLowerLayer(cMessage *msg)
             }
             EV << "New TP " << getTP() << endl;
             EV << "New SF " << getSF() << endl;
-//        }
+        }
     }
 }
 
