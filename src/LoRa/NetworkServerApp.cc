@@ -325,13 +325,6 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
     {
         if(knownNodes[i].srcAddr == frame->getTransmitterAddress())
         {
-            //short version
-//            knownNodes[i].shortAdrListSNIR.push_back(SNIRinGW);
-//            if(knownNodes[i].shortAdrListSNIR.size() > 5) knownNodes[i].adrListSNIR.pop_front();
-//            knownNodes[i].shortReceivedSeqNumber.push_back(frame->getSequenceNumber());
-//            if(knownNodes[i].shortReceivedSeqNumber.size() > 5) knownNodes[i].receivedSeqNumber.pop_front();
-//            recordScalar("newestPacketSNR",knownNodes[i].shortAdrListSNIR.back());
-
             //normal
             knownNodes[i].adrListSNIR.push_back(SNIRinGW);
             knownNodes[i].historyAllSNIR->record(SNIRinGW);
@@ -341,7 +334,7 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
             if(knownNodes[i].adrListSNIR.size() == 20) knownNodes[i].adrListSNIR.pop_front();
             knownNodes[i].framesFromLastADRCommand++;
             if(knownNodes[i].receivedSeqNumber.size() == 20) knownNodes[i].receivedSeqNumber.pop_front();
-            recordScalar("framesFromLastADRCommand",knownNodes[i].framesFromLastADRCommand);
+            recordScalar("framesFromLastADRCommand",knownNodes[i].framesFromLastADRCommand);//
             recordScalar("newestPacket",knownNodes[i].receivedSeqNumber.back());
             recordScalar("oldestPacket",knownNodes[i].receivedSeqNumber.front());
             recordScalar("sizeOfStoredSequenceNumbers",knownNodes[i].receivedSeqNumber.size());
@@ -352,7 +345,6 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                 double begin=knownNodes[i].receivedSeqNumber.front();
                 double end=knownNodes[i].receivedSeqNumber.back();
                 double size=knownNodes[i].receivedSeqNumber.size();
-                //find packet loss after 5 frames
                 double pathloss=(end-begin-(size-1))/(end-begin);
                 double pathlossRate = (int)(pathloss * 100000 + .5);
                 double pdr=0;
@@ -360,20 +352,13 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                 pdr = 1-pathlossRate;
                 recordScalar("Current PDR of last 20 frames",pdr);
                 EV << "Current PDR: " << pdr << endl;
-                double sum = std::accumulate(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), 0.0);
-                double mean = sum / knownNodes[i].shortAdrListSNIR.size();
-                std::vector<double> diff(knownNodes[i].shortAdrListSNIR.size());
-                std::transform(knownNodes[i].shortAdrListSNIR.begin(), knownNodes[i].shortAdrListSNIR.end(), diff.begin(), [mean](double x) { return x - mean; });
-//                double sq_sum = std::inner_product(diff.begin(), diff.end(), diff.begin(), 0.0);
-//                double stdev = std::sqrt(sq_sum / knownNodes[i].shortAdrListSNIR.size());
-//                recordScalar("stdev",stdev);
-//
-//                if PDR is low, pick minimum SNR recorded from last 20 packets as indicator for link quality
-//                basically, we are being pessimistic on link quality so lets say SNR is very low
+
+                //if PDR is low, pick minimum SNR recorded from last 20 packets as indicator for link quality
+                //basically, we are being pessimistic on link quality so lets say SNR is very low
                 if (pdr < 0.65)
                 {
                     nodeIndex = i;
-                    knownNodes[i].framesFromLastADRCommand = 0;
+                    knownNodes[i].framesFromLastADRCommand = 0;//reset count
                     sendADR = true;
                     counterFastADR++;
 
@@ -385,15 +370,15 @@ void NetworkServerApp::evaluateADR(Packet* pkt, L3Address pickedGateway, double 
                  if (pdr > 90)
                  {
                      nodeIndex = i;
-                     knownNodes[i].framesFromLastADRCommand = 0;
+                     knownNodes[i].framesFromLastADRCommand = 0;//reset count
                      sendADR = true;
                      counterFastADR++;
 
                      //ADR-max
                      SNRm = *max_element(knownNodes[i].adrListSNIR.begin(), knownNodes[i].adrListSNIR.end());
                  }
-//                else, when PDR is between 65% and 90%, try again later and just use
-//                adr method specified in initialization file
+//                else, when PDR is between 65% and 90%, evaluate ADR after 20 frames
+//                and just use adr method specified in initialization file
             }
             if(knownNodes[i].framesFromLastADRCommand == 20 || sendADRAckRep == true)
             {
